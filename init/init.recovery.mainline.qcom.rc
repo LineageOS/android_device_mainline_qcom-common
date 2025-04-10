@@ -4,3 +4,7 @@
 #
 
 import /init.recovery.mainline.rc
+
+# /dev/block/bootdevice symlink
+on init
+    symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
