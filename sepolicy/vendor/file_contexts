@@ -1,0 +1,2 @@
+# Executables
+/(vendor|system/vendor)/bin/hw/android\.hardware\.boot-service.qti		u:object_r:hal_bootctl_default_exec:s0
