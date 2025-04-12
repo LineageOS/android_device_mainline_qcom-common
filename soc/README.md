@@ -1,1 +1,22 @@
 ## TARGET_QCOM_SOC_FAMILY
+
+### msm8937
+- Qualcomm QCM2150 `qcm2150`
+- Qualcomm QM215 `qm215`
+- Qualcomm Snapdragon 425 `msm8917`
+- Qualcomm Snapdragon 427 `msm8920`
+- Qualcomm Snapdragon 429 `sdm429`
+- Qualcomm Snapdragon 430 `msm8937`
+- Qualcomm Snapdragon 435 `msm8940`
+- Qualcomm Snapdragon 439 `sdm439`
+
+### msm8953
+- Qualcomm Snapdragon 450 `sdm450`
+- Qualcomm Snapdragon 625 `msm8953`
+- Qualcomm Snapdragon 626 `msm8953pro`
+- Qualcomm Snapdragon 632 `sdm632`
+
+### sm7150
+- Qualcomm Snapdragon 730 `sm7150-aa`
+- Qualcomm Snapdragon 730G `sm7150-ab`
+- Qualcomm Snapdragon 732G `sm7150-ac`
