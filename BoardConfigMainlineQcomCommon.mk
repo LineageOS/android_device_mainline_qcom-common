@@ -11,6 +11,9 @@ include device/mainline/common/BoardConfigMainlineCommon.mk
 # Include the fragments
 -include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/board.mk
 
+# Bootloader (lk2nd)
+TARGET_LK2ND_ACTUAL_BOOTIMG_OFFSET ?= 524288
+
 # Boot parameters
 MAINLINE_QCOM_KERNEL_PARAMS := \
     console=ttyMSM0,115200n8
