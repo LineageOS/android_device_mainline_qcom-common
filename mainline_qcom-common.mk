@@ -10,6 +10,7 @@ $(call inherit-product, device/mainline/common/mainline_common.mk)
 
 # Include the fragments
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
+-include $(MAINLINE_QCOM_COMMON_PATH)/soc/$(TARGET_QCOM_SOC_FAMILY)/product.mk
 
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_HAL_INTERFACE := hidl
