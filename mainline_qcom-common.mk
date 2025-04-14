@@ -17,16 +17,16 @@ TARGET_MINIGBM_HAL_INTERFACE := hidl
 TARGET_MINIGBM_PLATFORM := msm
 
 # Init
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,init.mainline.qcom.*,$(MAINLINE_QCOM_COMMON_PATH)/init/,$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/)
+PRODUCT_PACKAGES += \
+    init.mainline.qcom.rc
 
 # Mountpoint
 PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
 # Recovery
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,init.recovery.mainline.qcom.*,$(MAINLINE_QCOM_COMMON_PATH)/init/,$(TARGET_COPY_OUT_RECOVERY)/root/)
+PRODUCT_PACKAGES += \
+    init.recovery.mainline.qcom.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
