@@ -4,6 +4,6 @@
 #
 
 # Firmware
-TARGET_VENDOR_FIRMWARE_QCOM_COPY := \
-    a630_gmu.bin \
-    a630_sqe.fw
+PRODUCT_PACKAGES += \
+    qcom_a630_gmu.bin \
+    qcom_a630_sqe.fw

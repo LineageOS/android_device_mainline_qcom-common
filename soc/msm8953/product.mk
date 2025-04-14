@@ -4,6 +4,6 @@
 #
 
 # Firmware
-TARGET_VENDOR_FIRMWARE_QCOM_COPY := \
-    a530_pfp.fw \
-    a530_pm4.fw
+PRODUCT_PACKAGES += \
+    qcom_a530_pfp.fw \
+    qcom_a530_pm4.fw
