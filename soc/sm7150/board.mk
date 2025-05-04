@@ -27,3 +27,10 @@ else
 TARGET_2ND_CPU_VARIANT := cortex-a55
 endif
 endif
+
+# Boot parameters
+MAINLINE_QCOM_SOC_ANDROIDBOOT_PARAMS := \
+    androidboot.boot_devices=soc@0/1d84000.ufshc
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE := 262144
