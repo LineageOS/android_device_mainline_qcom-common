@@ -15,7 +15,8 @@ LK2ND_MAKE_FLAGS := \
     -C $(LK2ND_SOURCE) \
     -j$(shell getconf _NPROCESSORS_ONLN) \
     BOOTLOADER_OUT=$(BUILD_TOP)/$(LK2ND_OUT_DIR) \
-    TOOLCHAIN_PREFIX=/usr/bin/arm-none-eabi-
+    TOOLCHAIN_PREFIX=/usr/bin/arm-none-eabi- \
+    $(TARGET_LK2ND_MAKE_FLAGS)
 
 $(INSTALLED_LK2NDIMAGE_TARGET):
 	$(call pretty,"Target lk2nd image: $@")
