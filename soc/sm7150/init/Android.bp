@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.mainline.qcom.sm7150.rc",
+    src: "init.mainline.qcom.sm7150.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
