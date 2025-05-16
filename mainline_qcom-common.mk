@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(MAINLINE_QCOM_COMMON_PATH)
 
+# Time
+PRODUCT_PACKAGES += \
+    TimeKeep
+
 # Utilities
 PRODUCT_PACKAGES += \
     pil-squasher
