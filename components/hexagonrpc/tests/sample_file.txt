@@ -1,0 +1,91 @@
+/*
+ * FastRPC reverse tunnel - sample file for HexagonFS mapped file test
+ *
+ * Copyright (C) 2024 The HexagonRPC Contributors
+ *
+ * This file is part of HexagonRPC.
+ *
+ * HexagonRPC is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+#![feature(io_error_more)]
+
+use std::collections::HashMap;
+use std::io::Error;
+use std::io::ErrorKind;
+use std::io::Result;
+use std::process::ExitCode;
+
+trait HexagonFSFile {
+	fn seek(&self) -> Result<u64>;
+	fn read(&self) -> Result<usize>;
+	fn openat<'a>(&'a self, name: &str) -> Result<Box<dyn HexagonFSFile + 'a>>;
+}
+
+trait HexagonFSDirent {
+	fn open<'a>(&'a self) -> Box<dyn HexagonFSFile + 'a>;
+}
+
+struct VirtDir<'a> {
+	def: &'a VirtDirDirent<'a>,
+}
+
+impl<'a> HexagonFSFile for VirtDir<'a> {
+	fn seek(&self) -> Result<u64>
+	{
+		Err(Error::new(ErrorKind::IsADirectory, "Is a directory"))
+	}
+
+	fn read(&self) -> Result<usize>
+	{
+		Err(Error::new(ErrorKind::IsADirectory, "Is a directory"))
+	}
+
+	fn openat<'b>(&'b self, name: &str) -> Result<Box<dyn HexagonFSFile + 'b>>
+	{
+		let resolution = self.def.files.get(name);
+
+		match resolution {
+			Some(dirent) => Ok(dirent.open()),
+			None => Err(Error::new(ErrorKind::NotFound, "No such file or directory"))
+		}
+	}
+}
+
+struct VirtDirDirent<'a> {
+	files: HashMap<&'a str, Box<dyn HexagonFSDirent>>
+}
+
+impl<'b> HexagonFSDirent for VirtDirDirent<'b> {
+	fn open<'a>(&'a self) -> Box<dyn HexagonFSFile + 'a>
+	{
+		Box::new(VirtDir {
+			def: self
+		})
+	}
+}
+
+fn main() -> ExitCode
+{
+	let root_dir = &VirtDirDirent { files: HashMap::from([
+		("sys", Box::new(VirtDirDirent { files: HashMap::from([
+
+		])}) as Box<dyn HexagonFSDirent>),
+	])};
+
+	let rootfd = root_dir.open();
+	let dirfd = rootfd.openat("");
+
+	return ExitCode::SUCCESS;
+}
