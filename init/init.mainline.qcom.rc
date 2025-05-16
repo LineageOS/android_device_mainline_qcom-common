@@ -27,6 +27,33 @@ service vendor.init-mainline-qcom-sh /vendor/bin/init.mainline.qcom.sh
 on init
     start vendor.init-mainline-qcom-sh
 
+# qrtr
+service vendor.qrtr-ns /vendor/bin/qrtr-ns -f 1
+    class core
+    user root
+    group system
+    disabled
+    oneshot
+
+on boot
+    exec - root -- /vendor/bin/qrtr-cfg 1
+    start vendor.qrtr-ns
+
+# tqftpserv
+service vendor.tqftpserv /vendor/bin/tqftpserv
+    class core
+    user root
+    group system
+    disabled
+    oneshot
+
+on boot
+    mkdir /data/vendor/tmp
+    mkdir /data/vendor/readwrite
+    mkdir /data/vendor/readonly/firmware/image
+    write /sys/class/firmware/timeout 1
+    start vendor.tqftpserv
+
 # Set SoC properties
 on property:vendor.qcom.soc.machine=*
     setprop ro.soc.model ${vendor.qcom.soc.machine}

@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.qcom.soc.family=$(TARGET_QCOM_SOC_FAMILY)
 
+# qrtr
+PRODUCT_PACKAGES += \
+    qrtr-cfg \
+    qrtr-ns
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mainline.qcom.rc
@@ -39,6 +44,10 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(MAINLINE_QCOM_COMMON_PATH)
+
+# tqftpserv
+PRODUCT_PACKAGES += \
+    tqftpserv
 
 # Time
 PRODUCT_PACKAGES += \
