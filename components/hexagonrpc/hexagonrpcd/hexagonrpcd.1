@@ -1,0 +1,66 @@
+'\" t
+.TH HEXAGONRPCD 1 "2024-09-28" "hexagonrpcd" "Server for FastRPC remote procedure calls from Qualcomm DSPs"
+.SH NAME
+hexagonrpcd - Server for FastRPC remote procedure calls from Qualcomm DSPs
+.SH SYNOPSIS
+\fBhexagonrpcd\fP [\fIoptions\&.\&.\&.\fP] -f \fIDEVICE
+.SH DESCRIPTION
+Server for FastRPC remote procedure calls from Qualcomm DSPs\&.
+.PP
+.SH OPTIONS
+.TP
+\fB\-c \fISHELL\fP
+Create a new pd running the specified ELF
+\fB\-d \fIDSP\fP
+DSP name (default: )
+.TP
+\fB\-f \fIDEVICE\fP
+FastRPC device node to attach to
+.TP
+\fB\-p \fIPROGRAM\fP
+Run client program with shared file descriptor
+.TP
+\fB\-R \fIDIR\fP
+Root directory of served files (default: /usr/share/qcom/)
+.TP
+\fB\-s\fP
+Attach to sensorspd
+.PP
+.SH NOTES
+
+Hexagonrpcd serves files to the remote processor via a reverse tunnel interface
+to the remote processor. These files are by default searched for in:
+
+These files are searched for in a directory tree, starting at the location
+defined by the -R option, or in /usr/share/qcom by default:
+
+.TS
+l l
+---
+l l. 
+HexagonRPCD file/dir    Android file/dir
+acdb                    /vendor/etc/acdbdata
+dsp                     /vendor/dsp
+sensors/config          /vendor/etc/sensors/config
+sensors/registry        /mnt/vendor/persist/sensors/registry/registry
+sensors/sns_reg.conf    /vendor/etc/sensors/sns_reg_config
+socinfo                 /sys/devices/soc0
+.TE
+
+These files and directories should be populated with files from your device's
+Android firmware.
+
+If you can pass the -R option, the convention is to pass -R
+/usr/share/qcom/SOC/VENDOR/DEVICE, where SOC is the SoC name in lowercase,
+VENDOR is the capitalized name of the device vendor, and DEVICE is the device
+name (e.g. -R /usr/share/qcom/sdm845/SHIFT/axolotl or -R
+/usr/share/qcom/sdm845/Thundercomm/db845c).
+
+.SH AUTHORS
+hexagonrpcd was written by The HexagonRPC Contributors <https://github.com/linux-msm/hexagonrpc>
+.SH COPYRIGHT
+Copyright (C) 2024 The HexagonRPC Contributors <https://github.com/linux-msm/hexagonrpc>
+Copyright (C) 2023 The Sensor Shell Contributors <https://github.com/linux-msm/hexagonrpc>
+.PP
+Released under GPL-3+ license\&.
+
