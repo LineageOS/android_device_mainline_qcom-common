@@ -7,3 +7,7 @@
 PRODUCT_PACKAGES += \
     firmware_qcom_a630_gmu.bin \
     firmware_qcom_a630_sqe.fw
+
+# Init
+PRODUCT_PACKAGES += \
+    init.mainline.qcom.sm7150.rc
