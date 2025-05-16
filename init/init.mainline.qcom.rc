@@ -9,3 +9,13 @@ import /vendor/etc/init/hw/init.mainline.qcom.soc.rc
 # /dev/block/bootdevice symlink
 on init
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
+
+# init.mainline.qcom.sh service
+service vendor.init-mainline-qcom-sh /vendor/bin/init.mainline.qcom.sh
+    user root
+    group root
+    oneshot
+    disabled
+
+on init
+    start vendor.init-mainline-qcom-sh

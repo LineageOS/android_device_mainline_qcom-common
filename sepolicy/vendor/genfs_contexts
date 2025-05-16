@@ -1,0 +1,5 @@
+# SoC info
+genfscon sysfs /devices/soc0/family		u:object_r:vendor_sysfs_soc_info:s0
+genfscon sysfs /devices/soc0/machine		u:object_r:vendor_sysfs_soc_info:s0
+genfscon sysfs /devices/soc0/revision		u:object_r:vendor_sysfs_soc_info:s0
+genfscon sysfs /devices/soc0/soc_id		u:object_r:vendor_sysfs_soc_info:s0

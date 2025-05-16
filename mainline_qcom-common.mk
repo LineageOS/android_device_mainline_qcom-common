@@ -20,6 +20,9 @@ TARGET_MINIGBM_PLATFORM := msm
 PRODUCT_PACKAGES += \
     init.mainline.qcom.rc
 
+PRODUCT_PACKAGES += \
+    init.mainline.qcom.sh
+
 # Mountpoint
 PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
