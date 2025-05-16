@@ -4,6 +4,7 @@
 #
 
 import /init.recovery.mainline.rc
+import /init.recovery.mainline.qcom.${ro.vendor.qcom.soc.family}.rc
 
 # /dev/block/bootdevice symlink
 on init

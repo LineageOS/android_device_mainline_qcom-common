@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
+# Properties
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.qcom.soc.family=$(TARGET_QCOM_SOC_FAMILY)
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mainline.qcom.rc
