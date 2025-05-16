@@ -30,5 +30,6 @@ TARGET_VENDOR_PROP += $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor.prop
 TARGET_RECOVERY_PIXEL_FORMAT ?= RGBX_8888
 
 # SELinux
+include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(MAINLINE_QCOM_COMMON_PATH)/sepolicy/vendor
