@@ -39,3 +39,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(MAINLINE_QCOM_COMMON_PATH)
+
+# Utilities
+PRODUCT_PACKAGES += \
+    pil-squasher
