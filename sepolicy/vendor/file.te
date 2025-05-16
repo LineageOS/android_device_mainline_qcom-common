@@ -1,1 +1,2 @@
+type firmware_file, file_type, contextmount_type, vendor_file_type;
 type vendor_sysfs_soc_info, fs_type, sysfs_type;
