@@ -1,0 +1,10 @@
+type vendor_qcom_init_sh, domain;
+type vendor_qcom_init_sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_qcom_init_sh)
+
+allow vendor_qcom_init_sh vendor_shell_exec:file rx_file_perms;
+allow vendor_qcom_init_sh vendor_toolbox_exec:file rx_file_perms;
+
+r_dir_file(vendor_qcom_init_sh, vendor_sysfs_soc_info)
+set_prop(vendor_qcom_init_sh, vendor_qcom_soc_prop)

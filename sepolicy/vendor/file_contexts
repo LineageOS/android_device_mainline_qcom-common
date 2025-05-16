@@ -1,2 +1,3 @@
 # Executables
 /(vendor|system/vendor)/bin/hw/android\.hardware\.boot-service.qti		u:object_r:hal_bootctl_default_exec:s0
+/(vendor|system/vendor)/bin/init\.mainline\.qcom\.sh				u:object_r:vendor_qcom_init_sh_exec:s0
