@@ -1,0 +1,2 @@
+option('hexagonrpcd_verbose', type : 'boolean', value : false,
+  description : 'Compile hexagonrpcd with extra logging for each remote method invocation')
