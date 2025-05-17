@@ -19,3 +19,7 @@ PRODUCT_PACKAGES += \
     $(LOCAL_FIRMWARE_GPU_A3XX) \
     $(LOCAL_FIRMWARE_GPU_A5XX)
 endif
+
+# Init
+PRODUCT_PACKAGES += \
+    init.mainline.qcom.msm8937.rc
