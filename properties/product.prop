@@ -1,0 +1,2 @@
+# Bluetooth
+persist.bluetooth.a2dp_aac.vbr_supported=true
