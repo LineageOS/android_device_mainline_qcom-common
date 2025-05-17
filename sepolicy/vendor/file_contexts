@@ -19,3 +19,6 @@
 
 # Mountpoint
 /(vendor|system/vendor)/firmware_mnt(/.*)?		u:object_r:firmware_file:s0
+
+# Persist
+/mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin		u:object_r:wcnss_persist_file:s0
