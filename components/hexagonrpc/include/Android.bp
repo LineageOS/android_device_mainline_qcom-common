@@ -1,0 +1,10 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_headers {
+    name: "hexagonrpc_headers",
+    export_include_dirs: ["."],
+    vendor: true,
+}
