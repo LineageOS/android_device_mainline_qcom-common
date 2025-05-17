@@ -24,7 +24,12 @@ BOARD_MESA3D_GALLIUM_DRIVERS += freedreno
 BOARD_MESA3D_VULKAN_DRIVERS += freedreno
 
 # Properties
-TARGET_VENDOR_PROP += $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor.prop
+TARGET_PRODUCT_PROP += \
+    $(MAINLINE_QCOM_COMMON_PATH)/properties/product.prop
+
+TARGET_VENDOR_PROP += \
+    $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor.prop \
+    $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor_bluetooth.prop
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT ?= RGBX_8888
