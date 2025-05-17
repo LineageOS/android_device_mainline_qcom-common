@@ -1,0 +1,15 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "hexagonrpc_defaults",
+    cflags: [
+        "-Wno-unused-parameter",
+    ],
+    header_libs: [
+        "device_kernel_headers",
+        "hexagonrpc_headers"
+    ],
+}
