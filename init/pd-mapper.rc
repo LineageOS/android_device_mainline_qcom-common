@@ -1,0 +1,6 @@
+service vendor.pd-mapper /vendor/bin/pd-mapper
+    class core
+    user root
+    group system
+    disabled
+    oneshot

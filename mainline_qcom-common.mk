@@ -23,14 +23,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sh
 
-# Modem
-PRODUCT_PACKAGES += \
-    pd-mapper \
-    qrtr-cfg \
-    qrtr-ns \
-    rmtfs \
-    tqftpserv
-
 # Mountpoint
 PRODUCT_PACKAGES += \
     vendor_firmware_gen_mountpoint \

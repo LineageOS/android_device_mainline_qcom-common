@@ -16,3 +16,43 @@ prebuilt_etc {
     sub_dir: "init",
     recovery: true,
 }
+
+prebuilt_etc {
+    name: "pd-mapper.rc",
+    src: "pd-mapper.rc",
+    sub_dir: "init",
+    required: [
+        "pd-mapper",
+    ],
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "qrtr-ns.rc",
+    src: "qrtr-ns.rc",
+    sub_dir: "init",
+    required: [
+        "qrtr-ns",
+    ],
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "rmtfs.rc",
+    src: "rmtfs.rc",
+    sub_dir: "init",
+    required: [
+        "rmtfs",
+    ],
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "tqftpserv.rc",
+    src: "tqftpserv.rc",
+    sub_dir: "init",
+    required: [
+        "tqftpserv",
+    ],
+    vendor: true,
+}

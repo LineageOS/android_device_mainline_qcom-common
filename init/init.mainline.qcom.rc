@@ -28,35 +28,7 @@ on init
     start vendor.init-mainline-qcom-sh
 
 # Modem
-service vendor.pd-mapper /vendor/bin/pd-mapper
-    class core
-    user root
-    group system
-    disabled
-    oneshot
-
-service vendor.qrtr-ns /vendor/bin/qrtr-ns -f 1
-    class core
-    user root
-    group system
-    disabled
-    oneshot
-
-service vendor.rmtfs /vendor/bin/rmtfs -o /dev/block/by-name -P -r -s
-    class core
-    user root
-    group system
-    disabled
-    oneshot
-
-service vendor.tqftpserv /vendor/bin/tqftpserv
-    class core
-    user root
-    group system
-    disabled
-    oneshot
-
-on boot
+on boot && property:ro.vendor.qcom.soc.enable_modem_services=1
     exec - root -- /vendor/bin/qrtr-cfg 1
     start vendor.qrtr-ns
 
