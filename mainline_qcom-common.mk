@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
 
 # Mountpoint
 PRODUCT_PACKAGES += \
+    vendor_dsp_mountpoint \
     vendor_firmware_gen_mountpoint \
     vendor_firmware_mnt_mountpoint
 
