@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc0ee507_1ffe2c45",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-05-19T20:22:27Z",
+      "side": 1,
+      "message": "https://elixir.bootlin.com/linux/v6.14.7/source/include/uapi/misc/fastrpc.h\n\nInclude `device_kernel_headers` in Android.bp",
+      "revId": "caf488ab5f4ae7b3c17c08a63ceb38e366949fed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
