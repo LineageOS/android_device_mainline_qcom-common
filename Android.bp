@@ -7,6 +7,12 @@ soong_namespace {
 }
 
 mkdir {
+    name: "vendor_etc_hexagonrpcd-root_dsp_mountpoint",
+    dir: "etc/hexagonrpcd-root/dsp",
+    vendor: true,
+}
+
+mkdir {
     name: "vendor_firmware_gen_mountpoint",
     dir: "firmware_gen",
     vendor: true,

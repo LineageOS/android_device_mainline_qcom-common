@@ -23,6 +23,7 @@ prebuilt_etc {
     sub_dir: "init",
     required: [
         "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_mountpoint",
     ],
     vendor: true,
 }
@@ -33,6 +34,7 @@ prebuilt_etc {
     sub_dir: "init",
     required: [
         "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_mountpoint",
     ],
     vendor: true,
 }
@@ -43,6 +45,7 @@ prebuilt_etc {
     sub_dir: "init",
     required: [
         "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_mountpoint",
     ],
     vendor: true,
 }
