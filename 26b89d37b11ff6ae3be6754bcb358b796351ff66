@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75401511_79480aaa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-05-19T20:24:19Z",
+      "side": 1,
+      "message": "nit: If you wanna achieve 48k, you might have to inform the sound card about the sample rate with mixer paths (aka tinyhal config)",
+      "revId": "26b89d37b11ff6ae3be6754bcb358b796351ff66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
