@@ -1,0 +1,6 @@
+service vendor.rmtfs /vendor/bin/rmtfs -o /dev/block/by-name -P -r -s
+    class core
+    user root
+    group system
+    disabled
+    oneshot
