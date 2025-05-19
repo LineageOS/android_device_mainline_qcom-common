@@ -6,6 +6,20 @@
 soong_namespace {
 }
 
+install_symlink {
+    name: "vendor_etc_hexagonrpcd-root_dsp_symlink",
+    vendor: true,
+    installed_location: "etc/hexagonrpcd-root/dsp",
+    symlink_target: "/vendor/dsp",
+}
+
+install_symlink {
+    name: "vendor_etc_hexagonrpcd-root_sensors_registry_symlink",
+    vendor: true,
+    installed_location: "etc/hexagonrpcd-root/sensors/registry",
+    symlink_target: "/mnt/vendor/persist/sensors/registry/registry",
+}
+
 mkdir {
     name: "vendor_firmware_gen_mountpoint",
     dir: "firmware_gen",
