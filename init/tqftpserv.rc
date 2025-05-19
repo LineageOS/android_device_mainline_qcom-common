@@ -1,0 +1,6 @@
+service vendor.tqftpserv /vendor/bin/tqftpserv
+    class core
+    user root
+    group system
+    disabled
+    oneshot

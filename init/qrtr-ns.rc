@@ -1,0 +1,6 @@
+service vendor.qrtr-ns /vendor/bin/qrtr-ns -f 1
+    class core
+    user root
+    group system
+    disabled
+    oneshot
