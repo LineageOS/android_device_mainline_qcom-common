@@ -2,6 +2,7 @@ service vendor.hexagonrpcd-sdsp /vendor/bin/hexagonrpcd -f /dev/fastrpc-sdsp -d 
     class core
     user system
     group system
+    stdio_to_kmsg
     disabled
 
 on boot

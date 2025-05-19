@@ -2,6 +2,7 @@ service vendor.hexagonrpcd-adsp-sensorspd /vendor/bin/hexagonrpcd -f /dev/fastrp
     class core
     user system
     group system
+    stdio_to_kmsg
     disabled
 
 on boot
