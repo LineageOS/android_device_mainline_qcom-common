@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9cecbc7d_fc0a62bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-05-19T16:17:15Z",
+      "side": 1,
+      "message": "Why does the rc entry depend on the binary? Either make a new phony target that builds both or add the rc to the cc_binary?",
+      "revId": "f41cb95860dac5f2b275c29d8f74abbc8c4ffa0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
