@@ -35,6 +35,7 @@ prebuilt_etc {
     required: [
         "hexagonrpcd",
         "vendor_etc_hexagonrpcd-root_dsp_mountpoint",
+        "vendor_etc_hexagonrpcd-root_sensors_registry_registry_symlink",
     ],
     vendor: true,
 }
@@ -46,6 +47,7 @@ prebuilt_etc {
     required: [
         "hexagonrpcd",
         "vendor_etc_hexagonrpcd-root_dsp_mountpoint",
+        "vendor_etc_hexagonrpcd-root_sensors_registry_registry_symlink",
     ],
     vendor: true,
 }
