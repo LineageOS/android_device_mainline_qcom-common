@@ -25,3 +25,36 @@ mkdir {
     dir: "firmware_gen",
     vendor: true,
 }
+
+phony {
+    name: "hexagonrpcd_common_phony",
+    required: [
+        "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_symlink",
+        "vendor_etc_hexagonrpcd-root_sensors_registry_symlink",
+    ],
+}
+
+phony {
+    name: "hexagonrpcd_adsp_rootpd_phony",
+    required: [
+        "hexagonrpcd_common_phony",
+        "hexagonrpcd-adsp-rootpd.rc",
+    ],
+}
+
+phony {
+    name: "hexagonrpcd_adsp_sensorspd_phony",
+    required: [
+        "hexagonrpcd_common_phony",
+        "hexagonrpcd-adsp-sensorspd.rc",
+    ],
+}
+
+phony {
+    name: "hexagonrpcd_sdsp_phony",
+    required: [
+        "hexagonrpcd_common_phony",
+        "hexagonrpcd-sdsp.rc",
+    ],
+}
