@@ -33,6 +33,8 @@ prebuilt_etc {
     sub_dir: "init",
     required: [
         "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_symlink",
+        "vendor_etc_hexagonrpcd-root_sensors_registry_symlink",
     ],
     vendor: true,
 }
@@ -43,6 +45,8 @@ prebuilt_etc {
     sub_dir: "init",
     required: [
         "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_symlink",
+        "vendor_etc_hexagonrpcd-root_sensors_registry_symlink",
     ],
     vendor: true,
 }
