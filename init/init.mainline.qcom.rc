@@ -48,6 +48,12 @@ on boot && property:ro.vendor.qcom.soc.enable_modem_services=1
 on shutdown
     stop vendor.rmtfs
 
+# Persist
+on post-fs
+    mkdir /mnt/vendor/persist-overlayfs-upperdir
+    mkdir /mnt/vendor/persist-overlayfs-workdir
+    mount overlay overlay /mnt/vendor/persist rw lowerdir=/mnt/vendor/persist,upperdir=/mnt/vendor/persist-overlayfs-upperdir,workdir=/mnt/vendor/persist-overlayfs-workdir
+
 # Set SoC properties
 on property:vendor.qcom.soc.machine=*
     setprop ro.soc.model ${vendor.qcom.soc.machine}
