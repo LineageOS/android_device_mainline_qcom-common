@@ -3,6 +3,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# DSP
+PRODUCT_PACKAGES += \
+    hexagonrpcd-adsp-rootpd.rc \
+    hexagonrpcd-adsp-sensorspd.rc
+
 # Firmware
 PRODUCT_PACKAGES += \
     firmware_qcom_a630_gmu.bin \
