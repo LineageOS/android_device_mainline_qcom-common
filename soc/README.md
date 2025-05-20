@@ -1,5 +1,11 @@
 ## TARGET_QCOM_SOC_FAMILY
 
+### msm8916
+- Qualcomm Snapdragon 410 `msm8916`
+- Qualcomm Snapdragon 415 `msm8929`
+- Qualcomm Snapdragon 615 `msm8939`
+- Qualcomm Snapdragon 616 `msm8939v2`
+
 ### msm8937
 - Qualcomm QCM2150 `qcm2150`
 - Qualcomm QM215 `qm215`
