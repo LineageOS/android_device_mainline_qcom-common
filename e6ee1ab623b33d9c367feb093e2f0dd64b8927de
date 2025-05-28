@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e9aebb94_f94d719a",
+        "filename": "soc/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 26777
+      },
+      "writtenOn": "2025-05-28T16:14:15Z",
+      "side": 1,
+      "message": "There is also msm8939v3 for the same SoC, if you want to document that.\nBut only msm8916 and msm8939 should be part of the TARGET_QCOM_SOC_FAMILY",
+      "range": {
+        "startLine": 9,
+        "startChar": 26,
+        "endLine": 9,
+        "endChar": 37
+      },
+      "revId": "e6ee1ab623b33d9c367feb093e2f0dd64b8927de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a589cf11_0394a7b9",
         "filename": "soc/msm8916/product.mk",
         "patchSetId": 2
