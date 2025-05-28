@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a589cf11_0394a7b9",
+        "filename": "soc/msm8916/product.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 26777
+      },
+      "writtenOn": "2025-05-28T05:04:26Z",
+      "side": 1,
+      "message": "remove msm8916v2",
+      "range": {
+        "startLine": 13,
+        "startChar": 16,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "e6ee1ab623b33d9c367feb093e2f0dd64b8927de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f8b152b6_f7acd9e9",
+        "filename": "soc/msm8916/product.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 26777
+      },
+      "writtenOn": "2025-05-28T05:04:26Z",
+      "side": 1,
+      "message": "remove msm8929, msm8936 and msm8939v2",
+      "range": {
+        "startLine": 15,
+        "startChar": 21,
+        "endLine": 15,
+        "endChar": 54
+      },
+      "revId": "e6ee1ab623b33d9c367feb093e2f0dd64b8927de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
