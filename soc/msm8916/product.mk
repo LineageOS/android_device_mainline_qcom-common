@@ -3,6 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(MAINLINE_QCOM_COMMON_SOC_PATH)/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml
+
 # Firmware
 PRODUCT_PACKAGES += \
     firmware_qcom_venus-1.8_venus.mbn
