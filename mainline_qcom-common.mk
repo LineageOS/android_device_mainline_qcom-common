@@ -4,13 +4,14 @@
 #
 
 MAINLINE_QCOM_COMMON_PATH := device/mainline/qcom-common
+MAINLINE_QCOM_COMMON_SOC_PATH := $(MAINLINE_QCOM_COMMON_PATH)/soc/$(TARGET_QCOM_SOC_FAMILY)
 
 # Inherit from mainline/common
 $(call inherit-product, device/mainline/common/mainline_common.mk)
 
 # Include the fragments
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
-include $(MAINLINE_QCOM_COMMON_PATH)/soc/$(TARGET_QCOM_SOC_FAMILY)/product.mk
+include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_HAL_INTERFACE := hidl
