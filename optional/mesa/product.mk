@@ -6,7 +6,6 @@
 ifeq ($(TARGET_GRAPHICS),mesa)
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.hardware.vulkan=freedreno \
-    ro.opengles.version=196610
+    ro.hardware.vulkan=freedreno
 
 endif # TARGET_GRAPHICS
