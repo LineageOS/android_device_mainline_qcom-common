@@ -43,3 +43,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+
+# Properties
+TARGET_VENDOR_PROP += \
+    $(MAINLINE_QCOM_COMMON_SOC_PATH)/properties/vendor.prop
