@@ -4,6 +4,9 @@
 #
 
 # Firmware
+PRODUCT_PACKAGES += \
+    firmware_qcom_venus-1.8_venus.mbn
+
 LOCAL_FIRMWARE_GPU_A3XX := \
     firmware_qcom_a300_pfp.fw \
     firmware_qcom_a300_pm4.fw
