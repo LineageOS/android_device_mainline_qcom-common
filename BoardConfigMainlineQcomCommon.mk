@@ -10,7 +10,7 @@ include device/mainline/common/BoardConfigMainlineCommon.mk
 
 # Include the fragments
 -include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/board.mk
-include $(MAINLINE_QCOM_COMMON_PATH)/soc/$(TARGET_QCOM_SOC_FAMILY)/board.mk
+include $(MAINLINE_QCOM_COMMON_SOC_PATH)/board.mk
 
 # Bootloader (lk2nd)
 TARGET_LK2ND_ACTUAL_BOOTIMG_OFFSET ?= 524288

@@ -5,7 +5,7 @@
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(MAINLINE_QCOM_COMMON_PATH)/soc/msm8937/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml
+    $(MAINLINE_QCOM_COMMON_SOC_PATH)/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml
 
 # Firmware
 LOCAL_FIRMWARE_GPU_A3XX := \
