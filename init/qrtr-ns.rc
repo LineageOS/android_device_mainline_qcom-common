@@ -4,4 +4,3 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f 1
     group system
     stdio_to_kmsg
     disabled
-    oneshot
