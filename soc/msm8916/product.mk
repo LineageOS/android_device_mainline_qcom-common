@@ -26,3 +26,8 @@ endif
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.msm8916.rc
+
+# Modem
+PRODUCT_PACKAGES += \
+    rmtfs \
+    rmtfs.rc
