@@ -47,7 +47,7 @@ include device/mainline/common/optional/options.mk
 
 # Graphics HALs
 ## Use gbm gralloc for SoCs which has no display with minigbm when using Mesa
-ifneq ($(filter msm8937 msm8953,$(TARGET_QCOM_SOC_FAMILY)),)
+ifneq ($(filter msm8916 msm8937 msm8953,$(TARGET_QCOM_SOC_FAMILY)),)
     ifeq ($(TARGET_GRAPHICS),mesa)
         TARGET_GRAPHICS_ALLOCATOR_HAL := gbm
     endif
