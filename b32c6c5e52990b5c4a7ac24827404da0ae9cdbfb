@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54e7e114_7dfcea8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-07-07T13:42:30Z",
+      "side": 1,
+      "message": "force call directly to /usr/bin/arm-none-eabi- can make problem with host not installed toolchain arm-none-eabi-, cannot override by export PATH ex using prebuilt",
+      "revId": "b32c6c5e52990b5c4a7ac24827404da0ae9cdbfb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
