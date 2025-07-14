@@ -18,8 +18,10 @@ PRODUCT_PACKAGES += \
     firmware_qcom_a630_sqe.fw
 
 # Graphics (Mesa)
+ifeq ($(TARGET_GRAPHICS),mesa)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.opengles.version=196610
+endif
 
 # Init
 PRODUCT_PACKAGES += \
