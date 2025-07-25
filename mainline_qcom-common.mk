@@ -26,9 +26,9 @@ PRODUCT_PACKAGES += \
 
 # Mountpoint
 PRODUCT_PACKAGES += \
-    vendor_dsp_mountpoint \
-    vendor_firmware_gen_mountpoint \
-    vendor_firmware_mnt_mountpoint
+    mainline_qcom-common_vendor_dsp_mountpoint \
+    mainline_qcom-common_vendor_firmware_gen_mountpoint \
+    mainline_qcom-common_vendor_firmware_mnt_mountpoint
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
