@@ -14,7 +14,6 @@ include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
 # Graphics allocator (minigbm)
-TARGET_MINIGBM_HAL_INTERFACE := hidl
 TARGET_MINIGBM_PLATFORM := msm
 
 # Init
