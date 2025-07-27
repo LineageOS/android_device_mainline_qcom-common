@@ -8,5 +8,5 @@ on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.machi
     setprop ro.opengles.version 196608
 
 # Modem
-on early-boot && property:vendor.qcom.soc.machine=MSM8916
+on early-boot && property:vendor.qcom.soc.msm_drm.gpu_id=306
     setprop ro.vendor.qcom.soc.enable_modem_services 1
