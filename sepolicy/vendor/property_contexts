@@ -1,2 +1,6 @@
+# Graphics allocator (minigbm)
+vendor.minigbm.avoid_ubwc	u:object_r:vendor_minigbm_avoid_ubwc_prop:s0
+
+# SoC
 ro.vendor.qcom.soc.		u:object_r:vendor_qcom_soc_prop:s0
 vendor.qcom.soc.		u:object_r:vendor_qcom_soc_prop:s0
