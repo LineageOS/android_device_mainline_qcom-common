@@ -1,0 +1,21 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "msm_drm_quirks",
+    srcs: ["msm_drm_quirks.cpp"],
+    init_rc: ["msm_drm_quirks.rc"],
+    include_dirs: [
+        "external/libdrm/freedreno",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libdrm",
+        "libdrm_freedreno",
+        "liblog",
+    ],
+    vendor: true,
+}

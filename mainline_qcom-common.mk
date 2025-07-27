@@ -13,6 +13,10 @@ $(call inherit-product, device/mainline/common/mainline_common.mk)
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
+# Graphics
+PRODUCT_PACKAGES += \
+    msm_drm_quirks
+
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_HAL_INTERFACE := hidl
 TARGET_MINIGBM_PLATFORM := msm
