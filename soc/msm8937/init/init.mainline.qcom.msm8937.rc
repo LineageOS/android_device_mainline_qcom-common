@@ -11,3 +11,6 @@ on early-boot
 # Graphics (Mesa)
 on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.machine=MSM8917
     setprop ro.opengles.version 196608
+
+on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.machine=MSM8937
+    setprop ro.opengles.version 196609
