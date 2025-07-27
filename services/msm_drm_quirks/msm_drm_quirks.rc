@@ -1,0 +1,9 @@
+service vendor.msm_drm_quirks /vendor/bin/msm_drm_quirks
+    user system
+    group system graphics
+    file /dev/kmsg w
+    oneshot
+    disabled
+
+on init
+    start vendor.msm_drm_quirks
