@@ -24,6 +24,7 @@ using namespace android::base;
 
 namespace {
 
+constexpr char kMesaFdMesaDebugProp[] = "vendor.mesa.fd.mesa.debug";
 constexpr char kMinigbmAvoidUbwcProp[] = "vendor.minigbm.avoid_ubwc";
 
 const std::string kPropPrefix = "vendor.qcom.soc.msm_drm.";
@@ -36,6 +37,11 @@ int Work(struct fd_pipe* pipe) {
     LOG(INFO) << "chip_id = " << std::to_string(chip_id) << " gpu_id = " << std::to_string(gpu_id);
     SetProperty(kPropPrefix + "chip_id", std::to_string(chip_id));
     SetProperty(kPropPrefix + "gpu_id", std::to_string(gpu_id));
+
+    // Adreno 5xx Mesa Freedreno quirks
+    if (gpu_id >= 500 && gpu_id <= 599) {
+        SetProperty(kMesaFdMesaDebugProp, "sysmem");
+    }
 
     /*
      * Let minigbm avoid UBWC for pre Adreno 6xx
