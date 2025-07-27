@@ -24,6 +24,8 @@ using namespace android::base;
 
 namespace {
 
+constexpr char kMinigbmAvoidUbwcProp[] = "vendor.minigbm.avoid_ubwc";
+
 const std::string kPropPrefix = "vendor.qcom.soc.msm_drm.";
 
 int Work(struct fd_pipe* pipe) {
@@ -34,6 +36,29 @@ int Work(struct fd_pipe* pipe) {
     LOG(INFO) << "chip_id = " << std::to_string(chip_id) << " gpu_id = " << std::to_string(gpu_id);
     SetProperty(kPropPrefix + "chip_id", std::to_string(chip_id));
     SetProperty(kPropPrefix + "gpu_id", std::to_string(gpu_id));
+
+    /*
+     * Let minigbm avoid UBWC for pre Adreno 6xx
+     *
+     * Insert this into should_avoid_ubwc() on minigbm/msm.c:
+     *
+    #ifdef __ANDROID__
+    static bool prop_loaded = false, prop_value = false;
+    const char *prop_buf;
+    if (prop_loaded) {
+        return prop_value;
+    } else {
+        prop_buf = drv_get_os_option("vendor.minigbm.avoid_ubwc");
+        prop_value = prop_buf && *prop_buf == '1';
+        prop_loaded = true;
+        return prop_value;
+    }
+    #endif
+     *
+     */
+    if (gpu_id < 600) {
+        SetProperty(kMinigbmAvoidUbwcProp, "1");
+    }
 
     return EXIT_SUCCESS;
 }
