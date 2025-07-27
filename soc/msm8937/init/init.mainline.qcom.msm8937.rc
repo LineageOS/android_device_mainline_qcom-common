@@ -9,8 +9,8 @@ on early-boot
     chown system system /sys/class/backlight/1a94000.dsi.0/max_brightness
 
 # Graphics (Mesa)
-on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.machine=MSM8917
+on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.msm_drm.gpu_id=308
     setprop ro.opengles.version 196608
 
-on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.machine=MSM8937
+on early-boot && property:ro.hardware.egl=mesa && property:vendor.qcom.soc.msm_drm.gpu_id=505
     setprop ro.opengles.version 196609
