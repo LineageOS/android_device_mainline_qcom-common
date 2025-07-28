@@ -13,3 +13,8 @@ endif
 PRODUCT_PACKAGES += \
     firmware_qcom_a530_pfp.fw \
     firmware_qcom_a530_pm4.fw
+
+# QRTR
+PRODUCT_PACKAGES += \
+    qrtr-ns \
+    qrtr-ns.rc
