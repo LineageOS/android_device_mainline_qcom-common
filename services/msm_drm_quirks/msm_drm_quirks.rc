@@ -6,4 +6,5 @@ service vendor.msm_drm_quirks /vendor/bin/msm_drm_quirks
     disabled
 
 on init
+    wait /dev/dri/card0
     start vendor.msm_drm_quirks
