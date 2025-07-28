@@ -13,3 +13,13 @@ endif
 PRODUCT_PACKAGES += \
     firmware_qcom_a530_pfp.fw \
     firmware_qcom_a530_pm4.fw
+
+# Init
+PRODUCT_PACKAGES += \
+    init.mainline.qcom.msm8953.rc
+
+# QRTR
+PRODUCT_PACKAGES += \
+    qrtr-cfg \
+    qrtr-ns \
+    qrtr-ns.rc

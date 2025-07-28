@@ -1,0 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Modem
+on early-boot && property:vendor.qcom.soc.machine=MSM8953
+    setprop ro.vendor.qcom.soc.enable_modem_services 1
