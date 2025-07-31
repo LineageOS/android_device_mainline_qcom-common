@@ -35,6 +35,7 @@ on boot && property:ro.vendor.qcom.soc.enable_modem_services=1
     start vendor.pd-mapper
 
     mkdir /data/vendor/tmp
+    mkdir /data/vendor/tmp/tqftpserv
     mkdir /data/vendor/readonly
     mkdir /data/vendor/readonly/firmware
     mkdir /data/vendor/readonly/firmware/image
