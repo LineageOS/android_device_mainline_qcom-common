@@ -14,6 +14,8 @@ PRODUCT_PACKAGES += \
 
 # Firmware
 PRODUCT_PACKAGES += \
+    firmware_ath10k_WCN3990_hw1.0_board-2.bin \
+    firmware_ath10k_WCN3990_hw1.0_firmware-5.bin \
     firmware_qcom_a630_gmu.bin \
     firmware_qcom_a630_sqe.fw
 
