@@ -26,3 +26,19 @@ endif
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sm7150.rc
+
+# Modem
+PRODUCT_PACKAGES += \
+    rmtfs \
+    rmtfs.rc \
+    tqftpserv \
+    tqftpserv.rc
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.qcom.soc.enable_modem_services=1
+
+# QRTR
+PRODUCT_PACKAGES += \
+    qrtr-cfg \
+    qrtr-ns \
+    qrtr-ns.rc
