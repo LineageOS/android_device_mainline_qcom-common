@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sh
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(MAINLINE_QCOM_COMMON_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
 # Mountpoint
 PRODUCT_PACKAGES += \
     mainline_qcom-common_vendor_dsp_mountpoint \
