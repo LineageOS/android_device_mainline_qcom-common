@@ -49,14 +49,14 @@ int Work(struct fd_pipe* pipe) {
      * Insert this into should_avoid_ubwc() on minigbm/msm.c:
      *
     #ifdef __ANDROID__
-    static bool prop_loaded = false, prop_value = false;
+    static bool prop_parsed = false, prop_value = false;
     const char *prop_buf;
-    if (prop_loaded) {
+    if (prop_parsed) {
         return prop_value;
     } else {
         prop_buf = drv_get_os_option("vendor.minigbm.avoid_ubwc");
-        prop_value = prop_buf && !strncmp(prop_buf, "true", 4);;
-        prop_loaded = true;
+        prop_value = prop_buf && !strcmp(prop_buf, "true");
+        prop_parsed = true;
         return prop_value;
     }
     #endif
