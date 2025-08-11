@@ -4,6 +4,16 @@
 #
 
 # Architecture
+ifneq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
+
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := generic
+
+else # TARGET_SUPPORTS_64_BIT_APPS
+
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -16,7 +26,9 @@ TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-endif
+endif # !TARGET_SUPPORTS_32_BIT_APPS
+
+endif # TARGET_SUPPORTS_64_BIT_APPS
 
 # Bootloader (lk2nd)
 TARGET_LK2ND_PLATFORM := msm8916
