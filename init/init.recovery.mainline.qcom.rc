@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-import /system/etc/init/hw/init.recovery.mainline.rc
-import /system/etc/init/hw/init.recovery.mainline.qcom.${ro.vendor.qcom.soc.family}.rc
-
 # /dev/block/bootdevice symlink
 on init
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
