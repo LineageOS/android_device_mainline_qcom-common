@@ -15,10 +15,11 @@ LK2ND_MAKE_FLAGS := \
     -C $(LK2ND_SOURCE) \
     -j$(shell getconf _NPROCESSORS_ONLN) \
     BOOTLOADER_OUT=$(BUILD_TOP)/$(LK2ND_OUT_DIR) \
+    DTC=$(BUILD_TOP)/$(HOST_OUT_EXECUTABLES)/dtc \
     TOOLCHAIN_PREFIX=$(BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- \
     $(TARGET_LK2ND_MAKE_FLAGS)
 
-$(INSTALLED_LK2NDIMAGE_TARGET):
+$(INSTALLED_LK2NDIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/dtc
 	$(call pretty,"Target lk2nd image: $@")
 	mkdir -p $(LK2ND_OUT_DIR)
 	$(LK2ND_PATH_OVERRIDE) $(LK2ND_MAKE_CMD) $(strip $(LK2ND_MAKE_FLAGS)) lk2nd-$(TARGET_LK2ND_PLATFORM)
