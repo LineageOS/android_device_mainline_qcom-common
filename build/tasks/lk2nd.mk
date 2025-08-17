@@ -15,6 +15,7 @@ LK2ND_MAKE_FLAGS := \
     -C $(LK2ND_SOURCE) \
     -j$(shell getconf _NPROCESSORS_ONLN) \
     BOOTLOADER_OUT=$(BUILD_TOP)/$(LK2ND_OUT_DIR) \
+    DTC=$(BUILD_TOP)/prebuilts/misc/linux-x86/dtc/dtc \
     TOOLCHAIN_PREFIX=$(BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- \
     $(TARGET_LK2ND_MAKE_FLAGS)
 
