@@ -1,0 +1,15 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Backlight
+on early-boot
+    chown system system /sys/class/backlight/ae94000.dsi.0/brightness
+    chown system system /sys/class/backlight/ae94000.dsi.0/max_brightness
+
+# Firmware generation
+on post-fs
+    exec u:r:vendor_pil_squasher:s0 -- /vendor/bin/pil-squasher /vendor/firmware_gen/adsp.mbn /vendor/firmware_mnt/image/adsp.mdt
+    exec u:r:vendor_pil_squasher:s0 -- /vendor/bin/pil-squasher /vendor/firmware_gen/cdsp.mbn /vendor/firmware_mnt/image/cdsp.mdt
+    exec u:r:vendor_pil_squasher:s0 -- /vendor/bin/pil-squasher /vendor/firmware_gen/modem.mbn /vendor/firmware_mnt/image/modem.mdt
