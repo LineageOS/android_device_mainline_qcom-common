@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "dcb91120_e42a588e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-27T13:42:18Z",
+      "side": 1,
+      "message": "`mainline/qcom-common: soc: Initial support for sm7325`",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "6bb3f2f9_7b8f4e2c",
