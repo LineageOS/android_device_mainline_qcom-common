@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bb3f2f9_7b8f4e2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-27T13:41:09Z",
+      "side": 1,
+      "message": "please upload dmesg from this target to somewhere, and post the link here - so that I can verify what\u0027s likely correct and what\u0027s not.",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "13d651b1_56d24aef",
+        "filename": "optional/options.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-27T13:41:09Z",
+      "side": 1,
+      "message": "please add the list of possible sm7325 variants to README.md",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfedb396_d9a21fb9",
+        "filename": "soc/sm7325/board.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-27T13:41:09Z",
+      "side": 1,
+      "message": "this should be a76 too",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a6c1e8a2_8c0fd4f2",
+        "filename": "soc/sm7325/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-27T13:41:09Z",
+      "side": 1,
+      "message": "does that device actually use WCN3990 firmware?",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
