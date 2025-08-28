@@ -69,6 +69,24 @@
       "parentUuid": "12675d80_98565f6a",
       "revId": "50e1c9424bd886e47ab8f41a73712e24be71f296",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a68563a_50bcd11f",
+        "filename": "optional/options.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-08-28T15:21:14Z",
+      "side": 1,
+      "message": "ok now i know that to filter variant, and variant only happen on sm7325",
+      "parentUuid": "391ef556_fca0380a",
+      "revId": "50e1c9424bd886e47ab8f41a73712e24be71f296",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
