@@ -144,6 +144,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a657e208_d3bd27f8",
+        "filename": "optional/options.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-28T07:28:12Z",
+      "side": 1,
+      "message": "then you should rename soc family to sc7280",
+      "parentUuid": "fc50589f_3329d173",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cfedb396_d9a21fb9",
         "filename": "soc/sm7325/board.mk",
         "patchSetId": 1
