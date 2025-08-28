@@ -16,6 +16,24 @@
       "message": "you missed this, also this filter doesn\u0027t cover sc7280 and qcm6490",
       "revId": "cb58d42e9cdcd5e4b27d8752f40e21c035195cd0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe5bfc36_9aa51b44",
+        "filename": "optional/options.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-08-28T10:13:19Z",
+      "side": 1,
+      "message": "iam forget that :lol ,lets update",
+      "parentUuid": "ab4dc3a0_111c526d",
+      "revId": "cb58d42e9cdcd5e4b27d8752f40e21c035195cd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
