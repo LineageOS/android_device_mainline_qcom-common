@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "a873a08c_5ee707b9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-08-28T01:12:57Z",
+      "side": 1,
+      "message": "note",
+      "parentUuid": "dcb91120_e42a588e",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "6bb3f2f9_7b8f4e2c",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d028ae52_1317575c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-08-28T01:12:57Z",
+      "side": 1,
+      "message": "thanks i will send later",
+      "parentUuid": "6bb3f2f9_7b8f4e2c",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "13d651b1_56d24aef",
@@ -48,6 +84,24 @@
       "writtenOn": "2025-08-27T13:41:09Z",
       "side": 1,
       "message": "please add the list of possible sm7325 variants to README.md",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a41b894_c86c9f3f",
+        "filename": "optional/options.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-08-28T01:12:57Z",
+      "side": 1,
+      "message": "in kernel mainline sm7325 come as sc7280 family, what best define this as single sm7325 or as sc7280 family",
+      "parentUuid": "13d651b1_56d24aef",
       "revId": "c9922368535d528c72321412116640f3cc61c37f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -82,6 +136,24 @@
       "writtenOn": "2025-08-27T13:41:09Z",
       "side": 1,
       "message": "does that device actually use WCN3990 firmware?",
+      "revId": "c9922368535d528c72321412116640f3cc61c37f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c1791e8_7dd07df3",
+        "filename": "soc/sm7325/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-08-28T01:12:57Z",
+      "side": 1,
+      "message": "device use ath11k,let me update later",
+      "parentUuid": "a6c1e8a2_8c0fd4f2",
       "revId": "c9922368535d528c72321412116640f3cc61c37f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
