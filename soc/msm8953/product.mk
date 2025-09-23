@@ -15,8 +15,7 @@ endif
 
 # Firmware
 PRODUCT_PACKAGES += \
-    firmware_qcom_a530_pfp.fw \
-    firmware_qcom_a530_pm4.fw
+    linux_firmware_qcom-a530
 
 # Init
 PRODUCT_PACKAGES += \
