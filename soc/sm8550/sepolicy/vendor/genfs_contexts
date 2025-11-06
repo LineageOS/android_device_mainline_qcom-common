@@ -1,0 +1,30 @@
+# Battery
+genfscon sysfs /devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-bat		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-usb		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-wls		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/pmic-glink/pmic_glink.ucsi.0/power_supply/ucsi-source-psy-pmic_glink.ucsi.01	u:object_r:sysfs_batteryinfo:s0
+
+# Block
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:1/block/sdb	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:2/block/sdc	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:3/block/sdd	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:4/block/sde	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:5/block/sdf	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:6/block/sdg	u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:7/block/sdh	u:object_r:sysfs_devices_block:s0
+
+# GPU
+genfscon sysfs /devices/platform/soc@0/3d00000.gpu			u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/soc@0/ae00000.display-subsystem	u:object_r:sysfs_gpu:s0
+
+# Remoteproc
+genfscon sysfs /devices/platform/soc@0/4080000.remoteproc/remoteproc/remoteproc		u:object_r:vendor_sysfs_remoteproc:s0
+genfscon sysfs /devices/platform/soc@0/6800000.remoteproc/remoteproc/remoteproc		u:object_r:vendor_sysfs_remoteproc:s0
+genfscon sysfs /devices/platform/soc@0/32300000.remoteproc/remoteproc/remoteproc	u:object_r:vendor_sysfs_remoteproc:s0
+
+# RTC
+genfscon sysfs /devices/platform/soc@0/c400000.spmi/spmi-0/0-00/c400000.spmi:pmic@0:rtc@6100/rtc/rtc0	u:object_r:sysfs_rtc:s0
+
+# USB
+genfscon sysfs /devices/platform/soc@0/a600000.usb/udc/a600000.usb	u:object_r:sysfs_udc:s0
