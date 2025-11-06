@@ -1,0 +1,53 @@
+# Block
+/sys/devices/platform/soc@0/1d84000.ufshc/host0/target0:0:0/0:0:0:[0-7]/block/sd[a-h]	u:object_r:sysfs_devices_block:s0
+
+# Block devices
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/boot_[ab]		u:object_r:boot_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/dtbo_[ab]		u:object_r:dtbo_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/fsc			u:object_r:modem_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/fsg			u:object_r:modem_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/init_boot_[ab]		u:object_r:boot_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/misc			u:object_r:misc_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/metadata		u:object_r:metadata_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/modemst[12]		u:object_r:modem_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/recovery_[ab]		u:object_r:recovery_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/super			u:object_r:super_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/vendor_boot_[ab]	u:object_r:boot_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/userdata		u:object_r:userdata_block_device:s0
+
+# Bootloader
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/abl_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/aop_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/aop_config_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/bluetooth_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/cpucp_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/devcfg_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/dsp_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/featenabler_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/hyp_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/imagefv_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/keymaster_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/mdtp_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/mdtpsecapp_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/modem_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/multiimgoem_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/multiimgqti_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/qupfw_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/qweslicstore_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/shrm_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/tz_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/uefi_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/uefisecapp_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/vbmeta_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/vbmeta_system_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/vm-bootsys_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/xbl_[ab]		u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/xbl_config_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/by-name/xbl_ramdump_[ab]	u:object_r:bootloader_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufshc/sd[a-h]			u:object_r:bootloader_block_device:s0
+
+# Wakeup
+/sys/devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-bat/wakeup[0-9]*		u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-usb/wakeup[0-9]*		u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-wls/wakeup[0-9]*		u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink.ucsi.0/power_supply/ucsi-source-psy-pmic_glink.ucsi.01/wakeup[0-9]*	u:object_r:sysfs_wakeup:s0
