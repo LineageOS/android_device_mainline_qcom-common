@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c837617b_30404fd0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-07T05:25:06Z",
+      "side": 1,
+      "message": "every bits in that commit needs to be verified (by you), also check if there\u0027s more things can be added",
+      "revId": "9a208318032b3d748b31b324ca4de78945c1a041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29b46d5a_a3941672",
+        "filename": "soc/sm8550/audio/primary_audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-07T05:25:06Z",
+      "side": 1,
+      "message": "if your sm8550 port supports more than just a speaker, add them",
+      "revId": "9a208318032b3d748b31b324ca4de78945c1a041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "821a050a_816ba47a",
+        "filename": "soc/sm8550/product.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-07T05:25:06Z",
+      "side": 1,
+      "message": "move ifneq below that",
+      "revId": "9a208318032b3d748b31b324ca4de78945c1a041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
