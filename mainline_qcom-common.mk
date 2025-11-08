@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
     msm_drm_quirks
 
 # Graphics allocator (minigbm)
-TARGET_MINIGBM_HAL_INTERFACE := hidl
 TARGET_MINIGBM_PLATFORM := msm
 
 # Init
