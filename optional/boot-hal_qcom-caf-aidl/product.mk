@@ -12,6 +12,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/bootctrl
 
-$(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
-
 endif # TARGET_BOOT_HAL
