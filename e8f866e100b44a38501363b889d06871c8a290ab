@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12aae2ad_6fc23033",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-09T01:51:49Z",
+      "side": 1,
+      "message": "check this out, also qcom usb hal is supposed to be used with qcom usb init scripts\nhttps://github.com/LineageOS/android_vendor_qcom_opensource_usb/blob/lineage-23.0/vendor_product.mk",
+      "revId": "e8f866e100b44a38501363b889d06871c8a290ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
