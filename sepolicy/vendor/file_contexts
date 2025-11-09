@@ -11,6 +11,8 @@
 
 # Executables
 /(vendor|system/vendor)/bin/hw/android\.hardware\.boot-service.qti		u:object_r:hal_bootctl_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb-service\.qti		u:object_r:hal_usb_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb\.gadget-service\.qti	u:object_r:hal_usb_gadget_default_exec:s0
 /(vendor|system/vendor)/bin/hexagonrpcd						u:object_r:vendor_hexagonrpcd_exec:s0
 /(vendor|system/vendor)/bin/init\.mainline\.qcom\.sh				u:object_r:vendor_qcom_init_sh_exec:s0
 /(vendor|system/vendor)/bin/msm_drm_quirks					u:object_r:vendor_msm_drm_quirks_exec:s0
