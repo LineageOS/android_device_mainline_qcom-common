@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60b991cf_a89ee147",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-11-09T04:15:33Z",
+      "side": 1,
+      "message": "The default udc name needs verified. It\u0027s probably .usb, not .dwc3.",
+      "revId": "1c9f3352770e40f48aa7b94719ce84866ae9ccb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
