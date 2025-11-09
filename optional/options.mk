@@ -39,6 +39,13 @@ ifeq ($(filter msm8916 msm8937 msm8953,$(TARGET_QCOM_SOC_FAMILY)),)
     TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm
 endif
 
+# USB
+ifneq ($(TARGET_SUPPORTS_USB_ACCESSORY_MODE),false)
+TARGET_USB_GADGET_HAL ?= qti
+TARGET_USB_HAL ?= qti
+TARGET_USB_INIT_SCRIPT ?= qti
+endif
+
 # Inherit from mainline/common
 include device/mainline/common/optional/options.mk
 
