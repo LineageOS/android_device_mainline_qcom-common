@@ -16,6 +16,41 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_mainline_qcom-common/+/459512",
       "revId": "7f8e5be5ee8d106bdfd3b0b2bd7b3707c3b98842",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f060c48f_0b6a3d1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-09T04:49:11Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "0d056eb9_00b5db81",
+      "revId": "7f8e5be5ee8d106bdfd3b0b2bd7b3707c3b98842",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2928349_3149e86f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-09T04:49:11Z",
+      "side": 1,
+      "message": "let\u0027s wait for the mainline/common change getting merged",
+      "revId": "7f8e5be5ee8d106bdfd3b0b2bd7b3707c3b98842",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
