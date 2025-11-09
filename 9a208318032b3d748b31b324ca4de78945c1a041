@@ -38,6 +38,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "a0cf7faf_771543fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-09T02:29:40Z",
+      "side": 1,
+      "message": "yeah no, sorry.\n\nthough, there shouldn\u0027t be sm8550 specific stuff (i.e. modem) on this commit as you can\u0027t test on sm8550, only those which you\u0027re quite sure they\u0027re common\n\nalso, just a reminder that things can be extended from the sm7150 base",
+      "parentUuid": "61843409_77c11bad",
+      "revId": "9a208318032b3d748b31b324ca4de78945c1a041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "29b46d5a_a3941672",
         "filename": "soc/sm8550/audio/primary_audio_policy_configuration.xml",
         "patchSetId": 2
@@ -66,6 +84,24 @@
       "writtenOn": "2025-11-07T05:25:06Z",
       "side": 1,
       "message": "move ifneq below that",
+      "revId": "9a208318032b3d748b31b324ca4de78945c1a041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "af443845_c9253543",
+        "filename": "soc/sm8550/product.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-09T02:29:40Z",
+      "side": 1,
+      "message": "ah sorry, my intention was to guard stuff per-section, rather than across sections...\n\nso:\n\n```\n# Modem\nifneq\n...\nendif\n\n# QRTR\nifneq\n...\nendif\n```\nNote that QRTR isn\u0027t a modem component",
+      "parentUuid": "821a050a_816ba47a",
       "revId": "9a208318032b3d748b31b324ca4de78945c1a041",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
