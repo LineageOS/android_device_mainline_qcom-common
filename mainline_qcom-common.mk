@@ -61,10 +61,3 @@ PRODUCT_PACKAGES += \
 # Utilities
 PRODUCT_PACKAGES += \
     pil-squasher
-
-# Wi-Fi
-MAINLINE_QCOM_WIFI_CONFIGS ?= \
-    wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    $(MAINLINE_QCOM_WIFI_CONFIGS)
