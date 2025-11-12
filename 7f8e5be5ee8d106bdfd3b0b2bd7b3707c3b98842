@@ -51,6 +51,24 @@
       "message": "let\u0027s wait for the mainline/common change getting merged",
       "revId": "7f8e5be5ee8d106bdfd3b0b2bd7b3707c3b98842",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "375e8594_a128d256",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-11-12T09:07:01Z",
+      "side": 1,
+      "message": "I was trying to say that I had uploaded the same change before you did, but since this got merged anyways, I\u0027ll just abandon mine.",
+      "parentUuid": "f060c48f_0b6a3d1e",
+      "revId": "7f8e5be5ee8d106bdfd3b0b2bd7b3707c3b98842",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
