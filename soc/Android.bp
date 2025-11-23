@@ -3,6 +3,14 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+phony {
+    name: "mainline_qcom-common_soc_phony",
+    required: select(soong_config_variable("mainline_qcom_common_soc", "primary_audio_policy_configuration_variant"), {
+        any: ["mainline_qcom-common_soc_primary_audio_policy_configuration.xml"],
+        default: [],
+    }),
+}
+
 prebuilt_etc {
     name: "mainline_qcom-common_soc_primary_audio_policy_configuration.xml",
     src: select(soong_config_variable("mainline_qcom_common_soc", "primary_audio_policy_configuration_variant"), {
