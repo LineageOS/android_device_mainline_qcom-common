@@ -13,12 +13,6 @@ $(call inherit-product, device/mainline/common/mainline_common.mk)
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
-# Audio
-ifdef SOONG_CONFIG_mainline_qcom-common_soc_primary_audio_policy_configuration_variant
-PRODUCT_PACKAGES += \
-    mainline_qcom-common_soc_primary_audio_policy_configuration.xml
-endef
-
 # Graphics
 PRODUCT_PACKAGES += \
     msm_drm_quirks
@@ -54,6 +48,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mainline.qcom.rc
+
+# SoC-specific
+PRODUCT_PACKAGES += \
+    mainline_qcom-common_soc_phony
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
