@@ -4,7 +4,7 @@
 #
 
 # Audio
-$(call soong_config_set,mainline_qcom-common_soc,primary_audio_policy_configuration_variant,msm8953)
+$(call soong_config_set,mainline_qcom-common_soc,primary_audio_policy_configuration_variant,msm8916)
 
 # Graphics (Mesa)
 ifeq ($(TARGET_GRAPHICS),mesa)
