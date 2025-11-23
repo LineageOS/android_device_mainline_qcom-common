@@ -50,23 +50,23 @@ phony {
 phony {
     name: "hexagonrpcd_adsp_rootpd_phony",
     required: [
-        "hexagonrpcd_common_phony",
         "hexagonrpcd-adsp-rootpd.rc",
+        "hexagonrpcd_common_phony",
     ],
 }
 
 phony {
     name: "hexagonrpcd_adsp_sensorspd_phony",
     required: [
-        "hexagonrpcd_common_phony",
         "hexagonrpcd-adsp-sensorspd.rc",
+        "hexagonrpcd_common_phony",
     ],
 }
 
 phony {
     name: "hexagonrpcd_sdsp_phony",
     required: [
-        "hexagonrpcd_common_phony",
         "hexagonrpcd-sdsp.rc",
+        "hexagonrpcd_common_phony",
     ],
 }

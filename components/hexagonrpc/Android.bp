@@ -10,6 +10,6 @@ cc_defaults {
     ],
     header_libs: [
         "device_kernel_headers",
-        "hexagonrpc_headers"
+        "hexagonrpc_headers",
     ],
 }
