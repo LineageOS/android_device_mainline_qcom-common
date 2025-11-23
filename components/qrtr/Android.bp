@@ -3,12 +3,21 @@ cc_library {
     vendor: true,
     srcs: [
         "lib/logging.c",
-        "lib/qrtr.c",
         "lib/qmi.c",
+        "lib/qrtr.c",
     ],
-    cflags: ["-fPIC", "-Wno-error"],
-    export_include_dirs: ["include", "lib"],
-    local_include_dirs: ["include", "src"],
+    cflags: [
+        "-Wno-error",
+        "-fPIC",
+    ],
+    export_include_dirs: [
+        "include",
+        "lib",
+    ],
+    local_include_dirs: [
+        "include",
+        "src",
+    ],
 }
 
 cc_binary {
@@ -17,14 +26,17 @@ cc_binary {
     srcs: [
         "lib/logging.c",
         "src/addr.c",
-        "src/ns.c",
-        "src/map.c",
         "src/hash.c",
-        "src/waiter.c",
+        "src/map.c",
+        "src/ns.c",
         "src/util.c",
+        "src/waiter.c",
     ],
     cflags: ["-Wno-error"],
-    local_include_dirs: ["include", "lib"],
+    local_include_dirs: [
+        "include",
+        "lib",
+    ],
 }
 
 cc_binary {
@@ -36,7 +48,10 @@ cc_binary {
         "src/cfg.c",
     ],
     cflags: ["-Wno-error"],
-    local_include_dirs: ["include", "lib"],
+    local_include_dirs: [
+        "include",
+        "lib",
+    ],
 }
 
 cc_binary {
@@ -48,5 +63,8 @@ cc_binary {
         "src/util.c",
     ],
     cflags: ["-Wno-error"],
-    local_include_dirs: ["include", "lib"],
+    local_include_dirs: [
+        "include",
+        "lib",
+    ],
 }
