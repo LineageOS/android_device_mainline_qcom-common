@@ -4,8 +4,7 @@
 #
 
 # Audio
-PRODUCT_COPY_FILES += \
-    $(MAINLINE_QCOM_COMMON_SOC_PATH)/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml
+$(call soong_config_set,mainline_qcom-common_soc,primary_audio_policy_configuration_variant,msm8953)
 
 # Graphics (Mesa)
 ifeq ($(TARGET_GRAPHICS),mesa)

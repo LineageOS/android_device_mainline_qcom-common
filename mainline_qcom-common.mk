@@ -13,6 +13,10 @@ $(call inherit-product, device/mainline/common/mainline_common.mk)
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
+# Audio
+PRODUCT_PACKAGES += \
+    mainline_qcom-common_soc_primary_audio_policy_configuration.xml
+
 # Graphics
 PRODUCT_PACKAGES += \
     msm_drm_quirks
