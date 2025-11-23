@@ -1,0 +1,18 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "mainline_qcom-common_soc_primary_audio_policy_configuration.xml",
+    src: select(soong_config_variable("mainline_qcom_common_soc", "primary_audio_policy_configuration_variant"), {
+        any @ soc_dir: "soc/" + soc_dir + "/audio/primary_audio_policy_configuration.xml",
+        default: "",
+    }),
+    filename_from_src: true,
+    vendor: true,
+    enabled: select(soong_config_variable("mainline_qcom_common_soc", "primary_audio_policy_configuration_variant"), {
+        any: true,
+        default: false,
+    }),
+}
