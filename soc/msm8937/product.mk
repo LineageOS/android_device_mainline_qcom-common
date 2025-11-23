@@ -4,7 +4,7 @@
 #
 
 # Audio
-$(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,msm8937)
+$(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,msm8916)
 
 # Firmware
 PRODUCT_PACKAGES += \
