@@ -50,3 +50,7 @@ on post-fs
 # Set SoC properties
 on property:vendor.qcom.soc.machine=*
     setprop ro.soc.model ${vendor.qcom.soc.machine}
+
+# USB
+on early-init && property:sys.usb.controller=*
+    setprop vendor.usb.controller ${sys.usb.controller}
