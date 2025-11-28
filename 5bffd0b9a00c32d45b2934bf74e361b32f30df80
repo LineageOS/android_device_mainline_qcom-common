@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d452a618_9c4580d1",
+        "filename": "optional/usb-gadget-hal_qti/product.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-28T04:17:55Z",
+      "side": 1,
+      "message": "People (including me) already do use different USB HALs with QTI USB Gadget HAL in downstream",
+      "revId": "5bffd0b9a00c32d45b2934bf74e361b32f30df80",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07dea7b0_b583196d",
+        "filename": "optional/usb-hal_qti/product.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-28T04:17:55Z",
+      "side": 1,
+      "message": "This and some other sections should be factored out into usb-init-script, I\u0027ll figure ut out tonight",
+      "revId": "5bffd0b9a00c32d45b2934bf74e361b32f30df80",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
