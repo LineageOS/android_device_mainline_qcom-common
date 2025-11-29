@@ -28,8 +28,14 @@ TARGET_PRODUCT_PROP += \
     $(MAINLINE_QCOM_COMMON_PATH)/properties/product.prop
 
 TARGET_VENDOR_PROP += \
-    $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor.prop \
+    $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor.prop
+
+ifneq ($(PRODUCT_IS_ATV),true)
+ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
+TARGET_VENDOR_PROP += \
     $(MAINLINE_QCOM_COMMON_PATH)/properties/vendor_bluetooth.prop
+endif
+endif
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT ?= RGBX_8888
