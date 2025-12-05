@@ -27,12 +27,6 @@ mkdir {
 }
 
 mkdir {
-    name: "mainline_qcom-common_vendor_firmware_gen_mountpoint",
-    dir: "firmware_gen",
-    vendor: true,
-}
-
-mkdir {
     name: "mainline_qcom-common_vendor_firmware_mnt_mountpoint",
     dir: "firmware_mnt",
     vendor: true,

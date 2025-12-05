@@ -1,3 +1,2 @@
 r_dir_file(kernel, firmware_file)
-r_dir_file(kernel, tmpfs)
 r_dir_file(kernel, wcnss_persist_file)

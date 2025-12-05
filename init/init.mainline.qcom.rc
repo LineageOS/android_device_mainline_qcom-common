@@ -10,13 +10,6 @@ import /vendor/etc/init/hw/init.mainline.qcom.${ro.vendor.qcom.soc.family}.rc
 on init
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
 
-# Firmware generation
-on early-init
-    mount tmpfs none /vendor/firmware_gen size=256M
-
-on property:sys.bootstat.first_boot_completed=1
-    umount /vendor/firmware_gen
-
 # init.mainline.qcom.sh service
 service vendor.init-mainline-qcom-sh /vendor/bin/init.mainline.qcom.sh
     user root
