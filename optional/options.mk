@@ -33,11 +33,7 @@ TARGET_BOOT_HAL ?= qcom-caf-aidl
 endif
 
 # Graphics HALs
-## Avoid using minigbm for incompatible SoCs by default
-## (most of the incompatible SoCs just needs should_avoid_ubwc quirk)
-ifeq ($(filter msm8916 msm8937 msm8953,$(TARGET_QCOM_SOC_FAMILY)),)
-    TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm
-endif
+TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm-upstream
 
 # Inherit from mainline/common
 include device/mainline/common/optional/options.mk
