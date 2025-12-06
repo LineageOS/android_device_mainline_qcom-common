@@ -13,6 +13,11 @@ $(call inherit-product, device/mainline/common/mainline_common.mk)
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
+# Build environment
+ifeq ($(wildcard hardware/qcom-caf/common/Android.bp),)
+$(call soong_config_set_bool,mainline_qcom_common,path_hardware_qcom_caf_common_is_absent,true)
+endif
+
 # Graphics
 PRODUCT_PACKAGES += \
     msm_drm_quirks
@@ -32,9 +37,15 @@ PRODUCT_PACKAGES += \
     media_profiles.xml
 
 # Mountpoint
+ifeq ($(SOONG_CONFIG_mainline_qcom_common_path_hardware_qcom_caf_common_is_absent),true)
 PRODUCT_PACKAGES += \
     mainline_qcom-common_vendor_dsp_mountpoint \
     mainline_qcom-common_vendor_firmware_mnt_mountpoint
+else
+PRODUCT_PACKAGES += \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
