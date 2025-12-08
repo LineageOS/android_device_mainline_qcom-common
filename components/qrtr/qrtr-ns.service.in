@@ -1,9 +1,0 @@
-[Unit]
-Description=QIPCRTR Name Service
-
-[Service]
-ExecStart=@prefix@/bin/qrtr-ns -f 1
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
