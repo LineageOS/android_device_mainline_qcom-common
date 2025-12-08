@@ -22,6 +22,4 @@ PRODUCT_PACKAGES += \
 
 # QRTR
 PRODUCT_PACKAGES += \
-    qrtr-cfg \
-    qrtr-ns \
-    qrtr-ns.rc
+    qrtr-cfg

@@ -46,13 +46,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "qrtr-ns.rc",
-    src: "qrtr-ns.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "rmtfs.rc",
     src: "rmtfs.rc",
     sub_dir: "init",

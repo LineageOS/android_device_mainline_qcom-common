@@ -39,6 +39,4 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # QRTR
 PRODUCT_PACKAGES += \
-    qrtr-cfg \
-    qrtr-ns \
-    qrtr-ns.rc
+    qrtr-cfg
