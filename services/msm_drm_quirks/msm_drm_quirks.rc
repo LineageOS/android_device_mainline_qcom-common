@@ -6,5 +6,15 @@ service vendor.msm_drm_quirks /vendor/bin/msm_drm_quirks
     disabled
 
 on init
+    stop vendor.graphics.allocator-4-0
+    stop vendor.graphics.allocator
+    stop vendor.graphics.allocator.minigbm_upstream
+
+on early-boot
     wait /dev/dri/card0
     start vendor.msm_drm_quirks
+
+on property:init.svc.vendor.msm_drm_quirks=stopped
+    enable vendor.graphics.allocator-4-0
+    enable vendor.graphics.allocator
+    enable vendor.graphics.allocator.minigbm_upstream
