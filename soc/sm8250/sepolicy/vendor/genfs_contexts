@@ -1,0 +1,4 @@
+# Remoteproc
+genfscon sysfs /devices/platform/soc@0/5c00000.remoteproc/remoteproc/remoteproc		u:object_r:vendor_sysfs_remoteproc:s0
+genfscon sysfs /devices/platform/soc@0/8300000.remoteproc/remoteproc/remoteproc		u:object_r:vendor_sysfs_remoteproc:s0
+genfscon sysfs /devices/platform/soc@0/17300000.remoteproc/remoteproc/remoteproc	u:object_r:vendor_sysfs_remoteproc:s0

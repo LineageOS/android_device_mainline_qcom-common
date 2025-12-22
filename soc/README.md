@@ -28,3 +28,8 @@
 - Qualcomm Snapdragon 730 `sm7150-aa`
 - Qualcomm Snapdragon 730G `sm7150-ab`
 - Qualcomm Snapdragon 732G `sm7150-ac`
+
+# sm8250
+- Qualcomm Snapdragon 865 `sm8250-aa`
+- Qualcomm Snapdragon 865+ `sm8250-ab`
+- Qualcomm Snapdragon 870 `sm8250-ac`
