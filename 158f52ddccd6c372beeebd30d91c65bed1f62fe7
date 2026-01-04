@@ -1,4 +1,39 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9da209e8_1365ce1d",
+        "filename": "sepolicy/vendor/init_shell.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-04T20:55:22Z",
+      "side": 1,
+      "message": "Name this file `vendor_qti_init_shell.te`",
+      "revId": "158f52ddccd6c372beeebd30d91c65bed1f62fe7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cae2a4f9_b6e3cc59",
+        "filename": "sepolicy/vendor/init_shell.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-04T20:55:22Z",
+      "side": 1,
+      "message": "missing empty space in between `vendor_file_type,` and `file_type`",
+      "revId": "158f52ddccd6c372beeebd30d91c65bed1f62fe7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
