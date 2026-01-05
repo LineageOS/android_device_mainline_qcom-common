@@ -33,4 +33,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.usb.use_gadget_hal=0
 endif
 
+# It does not provide recovery init rc, so borrow from usb-init-script_mainline
+PRODUCT_PACKAGES += \
+    init.recovery.mainline.usb.rc
+
 endif # TARGET_USB_INIT_SCRIPT
