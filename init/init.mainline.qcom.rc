@@ -5,6 +5,7 @@
 
 import /vendor/etc/init/hw/init.mainline.rc
 import /vendor/etc/init/hw/init.mainline.qcom.${ro.vendor.qcom.soc.family}.rc
+import /vendor/etc/init/hw/init.qcom.usb.rc
 
 # /dev/block/bootdevice symlink
 on init
