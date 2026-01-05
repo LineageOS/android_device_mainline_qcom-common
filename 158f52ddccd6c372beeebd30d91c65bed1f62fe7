@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "01d17fa0_c187bb38",
+        "filename": "sepolicy/vendor/init_shell.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-05T02:23:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9da209e8_1365ce1d",
+      "revId": "158f52ddccd6c372beeebd30d91c65bed1f62fe7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cae2a4f9_b6e3cc59",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-01-04T20:55:22Z",
       "side": 1,
       "message": "missing empty space in between `vendor_file_type,` and `file_type`",
+      "revId": "158f52ddccd6c372beeebd30d91c65bed1f62fe7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c93b1f7b_391a345e",
+        "filename": "sepolicy/vendor/init_shell.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-05T02:23:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cae2a4f9_b6e3cc59",
       "revId": "158f52ddccd6c372beeebd30d91c65bed1f62fe7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
