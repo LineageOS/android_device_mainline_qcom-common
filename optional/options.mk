@@ -41,9 +41,11 @@ TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm-upstream
 
 # USB
 ifneq ($(TARGET_SUPPORTS_USB_ACCESSORY_MODE),false)
-TARGET_USB_GADGET_HAL ?= qti
-TARGET_USB_HAL ?= qti
-TARGET_USB_INIT_SCRIPT ?= qti
+    TARGET_USB_GADGET_HAL ?= qti
+    TARGET_USB_INIT_SCRIPT ?= qti
+    ifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
+        TARGET_USB_HAL ?= qti
+    endif
 endif
 
 # Inherit from mainline/common
