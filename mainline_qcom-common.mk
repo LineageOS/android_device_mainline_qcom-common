@@ -55,7 +55,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.qcom.soc.family=$(TARGET_QCOM_SOC_FAMILY)
 
-ifeq ($(filter apq% msm%,$(TARGET_QCOM_SOC_FAMILY)),)
+ifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
 ifeq ($(TARGET_GRAPHICS),mesa)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1

@@ -22,6 +22,10 @@ ifeq ($(TARGET_QCOM_SOC_FAMILY),)
     endif
 endif
 
+ifneq ($(filter apq% msm%,$(TARGET_QCOM_SOC_FAMILY)),)
+TARGET_QCOM_SOC_FAMILY_IS_LEGACY := true
+endif
+
 # Audio HAL
 ifneq ($(TARGET_INITIAL_BRINGUP),true)
 TARGET_AUDIO_HAL ?= tinyhal
