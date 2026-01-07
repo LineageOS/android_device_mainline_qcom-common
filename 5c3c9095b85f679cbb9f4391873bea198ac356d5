@@ -16,6 +16,24 @@
       "message": "can\u0027t select usb function on sm7150, and you still didn\u0027t let me know how it is on sm8550",
       "revId": "5c3c9095b85f679cbb9f4391873bea198ac356d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fd2341f_c1f93838",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-07T20:50:46Z",
+      "side": 1,
+      "message": "Like I said before, atv does not have a user-facing usb mode picker the way that mobile does, and I am only booting atv right now. In dev options, there\u0027s a usb config list, and switching charging to mtp to ptp to rndis to midi causes enumeration for the various modes.",
+      "parentUuid": "332196a8_fd078957",
+      "revId": "5c3c9095b85f679cbb9f4391873bea198ac356d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
