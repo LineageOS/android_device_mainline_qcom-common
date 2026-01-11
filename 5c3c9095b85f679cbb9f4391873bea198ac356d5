@@ -105,6 +105,24 @@
       "parentUuid": "b8adfbcd_2dde3097",
       "revId": "5c3c9095b85f679cbb9f4391873bea198ac356d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a438778d_6a732e73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-11T01:08:54Z",
+      "side": 1,
+      "message": "I can\u0027t *not* be fixated on aidl. The lowest kernel I can target for these qcs8550 devices is 6.18. And 6.18 doesn\u0027t exist until manifest level 202604. Which is aidl only. I can\u0027t pass vintf checks without targeting aidl only.",
+      "parentUuid": "acf8709a_6ab72e2c",
+      "revId": "5c3c9095b85f679cbb9f4391873bea198ac356d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
