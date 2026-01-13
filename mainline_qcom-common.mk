@@ -72,8 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(MAINLINE_QCOM_COMMON_PATH) \
-    hardware/mainline/qcom
+    $(MAINLINE_QCOM_COMMON_PATH)
 
 # Time
 PRODUCT_PACKAGES += \

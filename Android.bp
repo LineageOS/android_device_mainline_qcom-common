@@ -4,9 +4,6 @@
 //
 
 soong_namespace {
-    imports: [
-        "hardware/mainline/qcom",
-    ],
 }
 
 install_symlink {
