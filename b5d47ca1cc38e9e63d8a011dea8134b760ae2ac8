@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1abb08a8_10d8aeac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-14T05:02:37Z",
+      "side": 1,
+      "message": "isn\u0027t `gpu_access` macro enough for this, rather than `domain`?",
+      "revId": "b5d47ca1cc38e9e63d8a011dea8134b760ae2ac8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
