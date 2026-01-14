@@ -16,6 +16,24 @@
       "message": "isn\u0027t `gpu_access` macro enough for this, rather than `domain`?",
       "revId": "b5d47ca1cc38e9e63d8a011dea8134b760ae2ac8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bd177d8_0e4e48cf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-14T05:23:12Z",
+      "side": 1,
+      "message": "Like mentioned in the commit message, I\u0027m getting a lot of denials from various domains like system_app or untrusted_app trying to read this prop. Presumably because they\u0027re accessing gralloc and the label doesn\u0027t change for some reason. Not sure we want to grant just this side of everything all the stuff in the gpu_access macro, though. Hence limiting this to just the prop getting denials.",
+      "parentUuid": "1abb08a8_10d8aeac",
+      "revId": "b5d47ca1cc38e9e63d8a011dea8134b760ae2ac8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
