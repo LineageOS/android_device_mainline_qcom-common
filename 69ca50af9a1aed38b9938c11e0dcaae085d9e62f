@@ -16,6 +16,24 @@
       "message": "meh, and even if we really want to go with that, then it\u0027s currently not necessary on sm7150 also",
       "revId": "69ca50af9a1aed38b9938c11e0dcaae085d9e62f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "adad6beb_4a54c5c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-15T19:58:53Z",
+      "side": 1,
+      "message": "Dropped it from sm7150",
+      "parentUuid": "5bd9dfcb_91653b85",
+      "revId": "69ca50af9a1aed38b9938c11e0dcaae085d9e62f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
