@@ -12,6 +12,10 @@ PRODUCT_PACKAGES += \
     linux_firmware_qcom-a420 \
     linux_firmware_qcom-venus-1.8
 
+# Graphics
+PRODUCT_PACKAGES += \
+    msm_drm_quirks
+
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.msm8916.rc
