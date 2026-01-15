@@ -11,6 +11,10 @@ PRODUCT_PACKAGES += \
     linux_firmware_qcom-a300 \
     linux_firmware_qcom-a530
 
+# Graphics
+PRODUCT_PACKAGES += \
+    msm_drm_quirks
+
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.msm8937.rc
