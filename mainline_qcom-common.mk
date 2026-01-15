@@ -18,10 +18,6 @@ ifeq ($(wildcard hardware/qcom-caf/common/Android.bp),)
 $(call soong_config_set_bool,mainline_qcom_common,path_hardware_qcom_caf_common_is_absent,true)
 endif
 
-# Graphics
-PRODUCT_PACKAGES += \
-    msm_drm_quirks
-
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_PLATFORM := msm
 
