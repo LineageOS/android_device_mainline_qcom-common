@@ -17,6 +17,10 @@ PRODUCT_PACKAGES += \
     firmware_ath10k_WCN3990_hw1.0_firmware-5.bin \
     linux_firmware_qcom-a630
 
+# Graphics
+PRODUCT_PACKAGES += \
+    msm_drm_quirks
+
 # Graphics (Mesa)
 ifeq ($(TARGET_GRAPHICS),mesa)
 PRODUCT_VENDOR_PROPERTIES += \
