@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "664046ab_99ea5a02",
+        "filename": "sepolicy/vendor/hal_light_default.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-16T16:45:59Z",
+      "side": 1,
+      "message": "don\u0027t rely on stuff (the `rw_dir_file` macro) in `device/lineage/sepolicy`, as that would break pure AOSP build which I don\u0027t want to",
+      "revId": "a4056fb3359f59df45ed7681956ac5869a1c6d91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
