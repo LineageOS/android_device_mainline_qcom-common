@@ -1,3 +1,4 @@
+type adsprpcd_file, file_type, mlstrustedobject, vendor_file_type;
 type bootloader_block_device, dev_type;
 type fastrpc_device, dev_type;
 type firmware_file, file_type, contextmount_type, vendor_file_type;
