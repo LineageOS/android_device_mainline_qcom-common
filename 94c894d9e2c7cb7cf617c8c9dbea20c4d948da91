@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "259d73d6_4b5e7375",
+        "filename": "sepolicy/vendor/vendor_hexagonrpcd.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-16T16:49:03Z",
+      "side": 1,
+      "message": "I\u0027d prefer this order: `allow`, `allowxperm`, finally macros sorted by a-z",
+      "revId": "94c894d9e2c7cb7cf617c8c9dbea20c4d948da91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6d62ebb_b038b697",
+        "filename": "sepolicy/vendor/vendor_hexagonrpcd.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-16T16:49:03Z",
+      "side": 1,
+      "message": "```\nallowxperm vendor_hexagonrpcd fastrpc_device:chr_file ioctl {\n  FASTRPC_IOCTL_ALLOC_DMA_BUFF\n  FASTRPC_IOCTL_INVOKE\n...\n};\n```",
+      "revId": "94c894d9e2c7cb7cf617c8c9dbea20c4d948da91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
