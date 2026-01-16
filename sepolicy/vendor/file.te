@@ -1,7 +1,7 @@
 type adsprpcd_file, file_type, mlstrustedobject, vendor_file_type;
 type bootloader_block_device, dev_type;
 type fastrpc_device, dev_type;
-type firmware_file, file_type, contextmount_type, vendor_file_type;
+type firmware_mnt_file, file_type, contextmount_type, vendor_file_type;
 type modem_block_device, dev_type;
 type rmtfs_device, dev_type;
 type tqftpserv_vendor_data_file, file_type, data_file_type, mlstrustedobject;
