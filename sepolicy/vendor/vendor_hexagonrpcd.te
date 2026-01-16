@@ -3,4 +3,17 @@ type vendor_hexagonrpcd_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(vendor_hexagonrpcd)
 
+allow vendor_hexagonrpcd fastrpc_device:chr_file rw_file_perms;
 allow vendor_hexagonrpcd kmsg_debug_device:chr_file rw_file_perms;
+allow vendor_hexagonrpcd vendor_sysfs_dt_model:file r_file_perms;
+
+allowxperm vendor_hexagonrpcd fastrpc_device:chr_file ioctl {
+  FASTRPC_IOCTL_ALLOC_DMA_BUFF
+  FASTRPC_IOCTL_INVOKE
+  FASTRPC_IOCTL_INIT_ATTACH
+  FASTRPC_IOCTL_INIT_CREATE
+  FASTRPC_IOCTL_MMAP
+  FASTRPC_IOCTL_INIT_ATTACH_SNS
+};
+
+r_dir_file(vendor_hexagonrpcd, adsprpcd_file)
