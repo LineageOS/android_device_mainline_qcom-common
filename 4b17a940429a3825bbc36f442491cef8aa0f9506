@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bb29ef33_80c77439",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-16T16:43:36Z",
+      "side": 1,
+      "message": "use tabs, and align with the other props, please",
+      "revId": "4b17a940429a3825bbc36f442491cef8aa0f9506",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
