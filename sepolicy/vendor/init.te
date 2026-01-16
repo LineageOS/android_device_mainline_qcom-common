@@ -2,5 +2,5 @@
 allow init bootloader_block_device:lnk_file relabelto;
 
 # Mount
-allow init firmware_file:dir mounton;
-allow init firmware_file:filesystem { mount unmount relabelfrom relabelto };
+allow init firmware_mnt_file:dir mounton;
+allow init firmware_mnt_file:filesystem { mount unmount relabelfrom relabelto };
