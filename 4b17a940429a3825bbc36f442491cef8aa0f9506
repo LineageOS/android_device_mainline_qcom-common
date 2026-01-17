@@ -16,6 +16,24 @@
       "message": "use tabs, and align with the other props, please",
       "revId": "4b17a940429a3825bbc36f442491cef8aa0f9506",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2c74fef_830e756f",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-17T01:59:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bb29ef33_80c77439",
+      "revId": "4b17a940429a3825bbc36f442491cef8aa0f9506",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
