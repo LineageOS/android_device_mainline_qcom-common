@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2bbb23d2_436ac02c",
+        "filename": "sepolicy/vendor/vendor_hexagonrpcd.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-17T01:59:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "259d73d6_4b5e7375",
+      "revId": "94c894d9e2c7cb7cf617c8c9dbea20c4d948da91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d6d62ebb_b038b697",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-01-16T16:49:03Z",
       "side": 1,
       "message": "```\nallowxperm vendor_hexagonrpcd fastrpc_device:chr_file ioctl {\n  FASTRPC_IOCTL_ALLOC_DMA_BUFF\n  FASTRPC_IOCTL_INVOKE\n...\n};\n```",
+      "revId": "94c894d9e2c7cb7cf617c8c9dbea20c4d948da91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cfab9c6f_fa4ab97c",
+        "filename": "sepolicy/vendor/vendor_hexagonrpcd.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-17T01:59:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d6d62ebb_b038b697",
       "revId": "94c894d9e2c7cb7cf617c8c9dbea20c4d948da91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
