@@ -16,6 +16,24 @@
       "message": "that entire file should be in mainline/common too?",
       "revId": "a72c9f62f2b4252ae07f37ede0d1c4a7eecea90c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "936fcef1_d40b115e",
+        "filename": "sepolicy/vendor/hal_usb_gadget_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-17T08:19:10Z",
+      "side": 1,
+      "message": "I disagree. The denials came from the qti hal. If someone does the policy for one of the generic hals and finds overlap, then deduplication can be done then.",
+      "parentUuid": "86d9b326_0885fee3",
+      "revId": "a72c9f62f2b4252ae07f37ede0d1c4a7eecea90c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
