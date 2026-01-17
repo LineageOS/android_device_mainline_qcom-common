@@ -34,6 +34,24 @@
       "parentUuid": "86d9b326_0885fee3",
       "revId": "a72c9f62f2b4252ae07f37ede0d1c4a7eecea90c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53a55d08_b2cc62a9",
+        "filename": "sepolicy/vendor/hal_usb_gadget_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-17T19:46:27Z",
+      "side": 1,
+      "message": "You aren\u0027t noticing these denials from non-QTI HALs so far doesn\u0027t mean you don\u0027t have to handle it properly, especially when it\u0027s not so hard to figure out. FunctionFS and /sys/class/udc are pretty common and basic things which basically none of USB Gadget HAL could get rid of.\n\nUsage of /sys/class/udc in the mainline HAL:\nhttps://github.com/LineageOS/android_hardware_mainline_common/blob/lineage-23.1/interfaces/usb/gadget/mainline/UsbGadget.cpp#L45\n\nUsage of FunctionFS in the mainline HAL:\nhttps://github.com/LineageOS/android_hardware_mainline_common/blob/lineage-23.1/interfaces/usb/gadget/mainline/UsbGadget.cpp#L42",
+      "parentUuid": "936fcef1_d40b115e",
+      "revId": "a72c9f62f2b4252ae07f37ede0d1c4a7eecea90c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
