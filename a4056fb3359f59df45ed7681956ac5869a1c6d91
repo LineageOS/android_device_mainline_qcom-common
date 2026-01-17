@@ -34,6 +34,24 @@
       "parentUuid": "664046ab_99ea5a02",
       "revId": "a4056fb3359f59df45ed7681956ac5869a1c6d91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "424c2774_f7a36a8d",
+        "filename": "sepolicy/vendor/hal_light_default.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-01-17T01:59:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fed2d750_d0fc3dcd",
+      "revId": "a4056fb3359f59df45ed7681956ac5869a1c6d91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
