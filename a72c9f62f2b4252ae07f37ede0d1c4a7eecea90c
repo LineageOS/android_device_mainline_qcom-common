@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86d9b326_0885fee3",
+        "filename": "sepolicy/vendor/hal_usb_gadget_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-17T07:53:30Z",
+      "side": 1,
+      "message": "that entire file should be in mainline/common too?",
+      "revId": "a72c9f62f2b4252ae07f37ede0d1c4a7eecea90c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
