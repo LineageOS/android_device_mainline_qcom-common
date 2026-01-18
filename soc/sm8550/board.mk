@@ -49,6 +49,10 @@ endif # TARGET_SUPPORTS_64_BIT_APPS
 MAINLINE_QCOM_SOC_ANDROIDBOOT_PARAMS := \
     androidboot.boot_devices=soc@0/1d84000.ufshc
 
+ifneq ($(TARGET_SUPPORTS_32_BIT_APPS),false)
+MAINLINE_QCOM_SOC_KERNEL_PARAMS += allow_mismatched_32bit_el0
+endif
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 
