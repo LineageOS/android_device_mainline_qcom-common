@@ -5,5 +5,5 @@ init_daemon_domain(vendor_msm_drm_quirks)
 
 gpu_access(vendor_msm_drm_quirks)
 set_prop(vendor_msm_drm_quirks, vendor_mesa_prop)
-set_prop(vendor_msm_drm_quirks, vendor_minigbm_avoid_ubwc_prop)
+set_prop(vendor_msm_drm_quirks, vendor_minigbm_prop)
 set_prop(vendor_msm_drm_quirks, vendor_qcom_soc_prop)
