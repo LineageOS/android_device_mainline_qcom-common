@@ -2,7 +2,15 @@ allow hal_bootctl_default bootloader_block_device:blk_file rw_file_perms;
 allowxperm hal_bootctl_default bootloader_block_device:blk_file ioctl { BLKSSZGET };
 
 allow hal_bootctl_default boot_block_device:blk_file r_file_perms;
+allow hal_bootctl_default device:dir r_dir_perms;
 allow hal_bootctl_default dtbo_block_device:blk_file r_file_perms;
 allow hal_bootctl_default recovery_block_device:blk_file r_file_perms;
+allow hal_bootctl_default sysfs_devices_block:file rw_file_perms;
+allow hal_bootctl_default vendor_bsg_device:chr_file rw_file_perms;
+
+allow hal_bootctl_default self:capability { sys_rawio };
 
 r_dir_file(hal_bootctl_default, block_device);
+
+r_dir_file(hal_bootctl_default, sysfs_devices_block);
+r_dir_file(hal_bootctl_default, vendor_sysfs_scsi_target);
