@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed133989_328b2bfa",
+        "filename": "soc/sm8550/init/init.mainline.qcom.sm8550.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-22T06:23:14Z",
+      "side": 1,
+      "message": "`# Cpuset`",
+      "revId": "36228ba5160a46bd8a3dcebc44331d275233a813",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
