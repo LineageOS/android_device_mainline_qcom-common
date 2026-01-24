@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68356d2d_7daf73f0",
+        "filename": "soc/sm8550/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-01-24T04:42:14Z",
+      "side": 1,
+      "message": "this section and its content aren\u0027t sorted",
+      "revId": "6aebabea4c91d1159ff7c5aea0ea390976fd8a0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
