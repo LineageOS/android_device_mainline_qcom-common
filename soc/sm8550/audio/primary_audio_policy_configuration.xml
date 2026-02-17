@@ -10,6 +10,11 @@
                      samplingRates="48000"
                      channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
         </mixPort>
+        <mixPort name="raw" role="source" flags="AUDIO_OUTPUT_FLAG_RAW AUDIO_OUTPUT_FLAG_FAST">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="48000"
+                     channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </mixPort>
    </mixPorts>
    <devicePorts>
         <devicePort tagName="Speaker" type="AUDIO_DEVICE_OUT_SPEAKER" role="sink">
@@ -17,6 +22,6 @@
     </devicePorts>
     <routes>
         <route type="mix" sink="Speaker"
-               sources="primary output"/>
+               sources="primary output,raw"/>
     </routes>
 </module>
