@@ -6,6 +6,7 @@
 phony {
     name: "mainline_qcom-common_soc_phony",
     required: select(soong_config_variable("mainline_qcom_common_soc", "primary_audio_policy_configuration_variant"), {
+        "none": [],
         any: ["mainline_qcom-common_soc_primary_audio_policy_configuration.xml"],
         default: [],
     }),
@@ -20,6 +21,7 @@ prebuilt_etc {
     filename_from_src: true,
     vendor: true,
     enabled: select(soong_config_variable("mainline_qcom_common_soc", "primary_audio_policy_configuration_variant"), {
+        "none": false,
         any: true,
         default: false,
     }),

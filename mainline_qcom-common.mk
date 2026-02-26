@@ -18,6 +18,11 @@ ifeq ($(wildcard hardware/qcom-caf/common/Android.bp),)
 $(call soong_config_set_bool,mainline_qcom_common,path_hardware_qcom_caf_common_is_absent,true)
 endif
 
+# Audio
+ifeq ($(TARGET_AUDIO_POLICY),cuttlefish)
+SOONG_CONFIG_mainline_qcom_common_soc_primary_audio_policy_configuration_variant := none
+endif
+
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_PLATFORM := msm
 
