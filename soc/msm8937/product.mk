@@ -6,6 +6,11 @@
 # Audio
 $(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,msm8916)
 
+# Bluetooth
+ifeq ($(filter qcm2150 qm215 sdm429 sdm439,$(TARGET_QCOM_SOC)),)
+PRODUCT_VENDOR_PROPERTIES += bluetooth.le.disable_apcf_extended_features?=1
+endif
+
 # Firmware
 PRODUCT_PACKAGES += \
     linux_firmware_qcom-a300 \
