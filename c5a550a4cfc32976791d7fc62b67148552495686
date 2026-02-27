@@ -16,6 +16,24 @@
       "message": "You can also add sdhci variant",
       "revId": "c5a550a4cfc32976791d7fc62b67148552495686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be2c081c_496e1d5a",
+        "filename": "soc/sdm670/board.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-02-27T17:36:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0a2e158c_a4805992",
+      "revId": "c5a550a4cfc32976791d7fc62b67148552495686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
