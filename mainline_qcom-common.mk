@@ -23,6 +23,10 @@ ifeq ($(TARGET_AUDIO_POLICY),cuttlefish)
 SOONG_CONFIG_mainline_qcom_common_soc_primary_audio_policy_configuration_variant := none
 endif
 
+# Firmware symlinks
+PRODUCT_PACKAGES += \
+    all_mainline_qcom-common_symlink_persist_firmware
+
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_PLATFORM := msm
 
