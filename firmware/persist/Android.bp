@@ -1,0 +1,26 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+install_symlink {
+    name: "mainline_qcom-common_symlink_persist_firmware_wlan_prima_WCNSS_qcom_wlan_nv.bin",
+    vendor: true,
+    installed_location: "firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin",
+    symlink_target: "/mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin",
+}
+
+install_symlink {
+    name: "mainline_qcom-common_symlink_persist_firmware_qcom_sensors_sns.reg",
+    vendor: true,
+    installed_location: "firmware/qcom/sensors/sns.reg",
+    symlink_target: "/mnt/vendor/persist/sensors/sns.reg",
+}
+
+phony {
+    name: "all_mainline_qcom-common_symlink_persist_firmware",
+    required: [
+        "mainline_qcom-common_symlink_persist_firmware_qcom_sensors_sns.reg",
+        "mainline_qcom-common_symlink_persist_firmware_wlan_prima_WCNSS_qcom_wlan_nv.bin",
+    ],
+}
