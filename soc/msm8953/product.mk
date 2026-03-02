@@ -21,6 +21,11 @@ endif
 PRODUCT_PACKAGES += \
     linux_firmware_qcom-a530
 
+# Firmware symlinks
+PRODUCT_PACKAGES += \
+    mainline_qcom-common_symlink_persist_firmware_qcom_sensors_sns.reg \
+    mainline_qcom-common_symlink_persist_firmware_wlan_prima_WCNSS_qcom_wlan_nv.bin
+
 # Graphics
 PRODUCT_PACKAGES += \
     msm_drm_quirks
