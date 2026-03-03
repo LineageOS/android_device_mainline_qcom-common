@@ -23,6 +23,9 @@ MAINLINE_QCOM_KERNEL_PARAMS := \
 BOARD_MESA3D_GALLIUM_DRIVERS += freedreno
 BOARD_MESA3D_VULKAN_DRIVERS += freedreno
 
+# Platform
+TARGET_BOARD_PLATFORM := qcom
+
 # Properties
 TARGET_PRODUCT_PROP += \
     $(MAINLINE_QCOM_COMMON_PATH)/properties/product.prop
