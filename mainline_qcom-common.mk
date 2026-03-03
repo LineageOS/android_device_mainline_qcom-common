@@ -28,7 +28,8 @@ TARGET_MINIGBM_PLATFORM := msm
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mainline.qcom.rc
+    init.mainline.qcom.rc \
+    ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sh \
