@@ -1,0 +1,6 @@
+type vendor_start_remoteproc, domain;
+type vendor_start_remoteproc_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_start_remoteproc);
+
+set_prop(vendor_start_remoteproc, vendor_remoteproc_prop)

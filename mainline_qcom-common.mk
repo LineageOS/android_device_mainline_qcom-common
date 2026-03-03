@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     init.mainline.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.mainline.qcom.sh
+    init.mainline.qcom.sh \
+    init.mainline.qcom.start_remoteproc.sh
 
 # Media
 PRODUCT_PACKAGES += \

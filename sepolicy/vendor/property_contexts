@@ -6,3 +6,6 @@ vendor.qcom.soc.		u:object_r:vendor_qcom_soc_prop:s0
 vendor.sys.usb.			u:object_r:vendor_usb_prop:s0
 vendor.usb.			u:object_r:vendor_usb_prop:s0
 persist.vendor.usb.		u:object_r:vendor_usb_prop:s0
+
+# Remoteproc
+vendor.remoteproc.		u:object_r:vendor_remoteproc_prop:s0

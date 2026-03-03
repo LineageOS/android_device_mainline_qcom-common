@@ -49,17 +49,11 @@ on post-fs
     mount overlay overlay /mnt/vendor/persist rw lowerdir=/mnt/vendor/persist,upperdir=/mnt/vendor/persist-overlayfs-upperdir,workdir=/mnt/vendor/persist-overlayfs-workdir
 
 # Remoteproc
+on property:vendor.remoteproc.trigger_start=*
+    exec u:r:vendor_start_remoteproc:s0 -- /vendor/bin/sh /vendor/bin/init.mainline.qcom.start_remoteproc.sh ${vendor.remoteproc.trigger_start}
+
 on start_all_remoteproc
-    write /sys/class/remoteproc/remoteproc0/state start
-    write /sys/class/remoteproc/remoteproc1/state start
-    write /sys/class/remoteproc/remoteproc2/state start
-    write /sys/class/remoteproc/remoteproc3/state start
-    write /sys/class/remoteproc/remoteproc4/state start
-    write /sys/class/remoteproc/remoteproc5/state start
-    write /sys/class/remoteproc/remoteproc6/state start
-    write /sys/class/remoteproc/remoteproc7/state start
-    write /sys/class/remoteproc/remoteproc8/state start
-    write /sys/class/remoteproc/remoteproc9/state start
+    exec u:r:vendor_start_remoteproc:s0 -- /vendor/bin/sh /vendor/bin/init.mainline.qcom.start_remoteproc.sh
 
 # Set SoC properties
 on property:vendor.qcom.soc.machine=*

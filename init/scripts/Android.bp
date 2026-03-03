@@ -8,3 +8,9 @@ sh_binary {
     src: "init.mainline.qcom.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.mainline.qcom.start_remoteproc.sh",
+    src: "init.mainline.qcom.start_remoteproc.sh",
+    vendor: true,
+}
