@@ -2,3 +2,7 @@
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
+
+# FastRPC
+/dev/fastrpc-adsp	0600	system	system
+/dev/fastrpc-sdsp	0600	system	system

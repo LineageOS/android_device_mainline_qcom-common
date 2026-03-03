@@ -3,9 +3,3 @@ service vendor.hexagonrpcd-adsp-rootpd /vendor/bin/hexagonrpcd -f /dev/fastrpc-a
     user system
     group system
     stdio_to_kmsg
-    disabled
-
-on boot
-    wait /dev/fastrpc-adsp
-    chown system system /dev/fastrpc-adsp
-    start vendor.hexagonrpcd-adsp-rootpd

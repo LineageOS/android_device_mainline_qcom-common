@@ -2,9 +2,3 @@ service vendor.hexagonrpcd-adsp-sensorspd /vendor/bin/hexagonrpcd -f /dev/fastrp
     class core
     user system
     group system
-    disabled
-
-on boot
-    wait /dev/fastrpc-adsp
-    chown system system /dev/fastrpc-adsp
-    start vendor.hexagonrpcd-adsp-sensorspd
