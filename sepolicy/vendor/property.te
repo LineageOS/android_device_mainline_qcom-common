@@ -1,2 +1,3 @@
+vendor_internal_prop(vendor_remoteproc_prop)
 vendor_internal_prop(vendor_usb_prop)
 vendor_public_prop(vendor_qcom_soc_prop)
