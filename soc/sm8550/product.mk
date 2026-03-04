@@ -6,6 +6,12 @@
 # Audio
 $(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,sm8550)
 
+# Bluetooth
+ifneq ($(TARGET_BLUETOOTH_HAL),)
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth_le.prebuilt.xml
+endif
+
 # DSP
 PRODUCT_PACKAGES += \
     hexagonrpcd_adsp_rootpd_phony
