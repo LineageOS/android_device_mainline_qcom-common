@@ -9,6 +9,10 @@ ifeq ($(TARGET_AUDIO_HAL),baylibre)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.primary.latency_ms=40
 endif
+ifneq ($(TARGET_AUDIO_HAL),)
+PRODUCT_PACKAGES += \
+    android.hardware.audio.low_latency.prebuilt.xml
+endif
 
 # Bluetooth
 ifneq ($(TARGET_BLUETOOTH_HAL),)
