@@ -5,6 +5,10 @@
 
 # Audio
 $(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,sm8550)
+ifneq ($(TARGET_AUDIO_HAL),)
+PRODUCT_PACKAGES += \
+    android.hardware.audio.low_latency.prebuilt.xml
+endif
 
 # Bluetooth
 ifneq ($(TARGET_BLUETOOTH_HAL),)
