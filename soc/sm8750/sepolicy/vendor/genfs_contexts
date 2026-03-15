@@ -1,0 +1,11 @@
+# GPU
+genfscon sysfs /devices/platform/soc@0/3d00000.gpu			u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/soc@0/ae00000.display-subsystem	u:object_r:sysfs_gpu:s0
+
+# Remoteproc
+genfscon sysfs /devices/platform/soc@0/4080000.remoteproc/remoteproc/remoteproc		u:object_r:vendor_sysfs_remoteproc:s0
+genfscon sysfs /devices/platform/soc@0/6800000.remoteproc/remoteproc/remoteproc		u:object_r:vendor_sysfs_remoteproc:s0
+genfscon sysfs /devices/platform/soc@0/32300000.remoteproc/remoteproc/remoteproc	u:object_r:vendor_sysfs_remoteproc:s0
+
+# USB
+genfscon sysfs /devices/platform/soc@0/a600000.usb/udc/a600000.usb	u:object_r:sysfs_udc:s0
