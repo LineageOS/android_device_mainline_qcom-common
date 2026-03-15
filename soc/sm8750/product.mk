@@ -1,0 +1,45 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Audio
+$(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,sm8550)
+ifneq ($(TARGET_AUDIO_HAL),)
+PRODUCT_PACKAGES += \
+    android.hardware.audio.low_latency.prebuilt.xml
+endif
+
+# Bluetooth
+ifneq ($(TARGET_BLUETOOTH_HAL),)
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth_le.prebuilt.xml
+endif
+
+# DSP
+PRODUCT_PACKAGES += \
+    hexagonrpcd_adsp_rootpd_phony
+
+# Graphics (Mesa)
+ifeq ($(TARGET_GRAPHICS),mesa)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.version-1_4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+    frameworks/native/data/etc/android.software.opengles.deqp.level-2025-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
+    frameworks/native/data/etc/android.software.vulkan.deqp.level-2025-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.opengles.version=196610
+endif
+
+# Init
+PRODUCT_PACKAGES += \
+    init.mainline.qcom.sm8750.rc
+
+# Thermal
+ifeq ($(TARGET_THERMAL_HAL),linaro-libpm)
+PRODUCT_PACKAGES += \
+    thermal-sm8750.json
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.thermal.config=thermal-sm8750.json
+endif # TARGET_THERMAL_HAL
