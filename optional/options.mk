@@ -20,6 +20,8 @@ ifeq ($(TARGET_QCOM_SOC_FAMILY),)
             TARGET_QCOM_SOC_FAMILY := sm7150
         else ifneq ($(filter qcs8550,$(TARGET_QCOM_SOC)),)
             TARGET_QCOM_SOC_FAMILY := sm8550
+        else ifneq ($(filter cq8725s,$(TARGET_QCOM_SOC)),)
+            TARGET_QCOM_SOC_FAMILY := sm8750
         else
             $(error Please add the SoC to this section)
         endif
