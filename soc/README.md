@@ -35,3 +35,6 @@
 
 ### sm8550
 - Qualcomm Snapdragon 8 Gen 2 `qcs8550`
+
+### sm8750
+- Qualcomm Dragonwing Q8 Q-8750 `cq8725s` `cq8750s`
