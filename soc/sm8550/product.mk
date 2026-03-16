@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     linux_firmware_ath12k-wcn7850
 
 # Graphics (Mesa)
+$(call soong_config_set_string_list,minigbm_upstream,cflags,-DSC_7280)
 ifeq ($(TARGET_GRAPHICS),mesa)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
