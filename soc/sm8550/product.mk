@@ -38,6 +38,21 @@ $(call soong_config_set_string_list,minigbm_upstream,cflags,-DSC_7280)
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sm8550.rc
 
+# Media
+ifeq ($(TARGET_MEDIA_C2_HAL),v4l2_codec2)
+PRODUCT_COPY_FILES += \
+    $(MAINLINE_QCOM_COMMON_SOC_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.v4l2_codec2.decode_concurrent_instances=32 \
+    ro.vendor.v4l2_codec2.encode_concurrent_instances=32
+
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.stagefright.c2-poolmask=0x1f50000
+
+TARGET_V4L2_CODEC2_USE_EXAMPLE_CONFIGURATION := false
+endif # TARGET_MEDIA_C2_HAL
+
 # Thermal
 ifeq ($(TARGET_THERMAL_HAL),linaro-libpm)
 PRODUCT_PACKAGES += \
