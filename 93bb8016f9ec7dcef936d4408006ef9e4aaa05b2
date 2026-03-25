@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "873f4f44_15aadb7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-03-25T13:43:18Z",
+      "side": 1,
+      "message": "At very least, in practice, that\u0027ll break swiftshader support",
+      "revId": "93bb8016f9ec7dcef936d4408006ef9e4aaa05b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
