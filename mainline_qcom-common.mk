@@ -29,7 +29,7 @@ $(call soong_config_set,tinyhal,out_period_size_default,480)
 $(call soong_config_set,tinyhal,out_rate_default,48000)
 
 # Graphics allocator (minigbm)
-TARGET_MINIGBM_PLATFORM := msm
+TARGET_MINIGBM_PLATFORM := gbm_mesa
 
 # Init
 PRODUCT_PACKAGES += \
