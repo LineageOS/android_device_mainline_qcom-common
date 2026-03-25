@@ -5,6 +5,10 @@
 
 # Audio
 $(call soong_config_set,mainline_qcom_common_soc,primary_audio_policy_configuration_variant,sm8550)
+ifeq ($(TARGET_AUDIO_HAL),baylibre)
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.audio.primary.latency_ms=20
+endif
 
 # Bluetooth
 ifneq ($(TARGET_BLUETOOTH_HAL),)
