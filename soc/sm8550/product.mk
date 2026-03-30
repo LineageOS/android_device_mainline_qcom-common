@@ -34,3 +34,12 @@ endif
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sm8550.rc
+
+# Thermal
+ifeq ($(TARGET_THERMAL_HAL),linaro-libpm)
+PRODUCT_PACKAGES += \
+    thermal-sm8550.json
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.thermal.config=thermal-sm8550.json
+endif # TARGET_THERMAL_HAL
