@@ -1,0 +1,300 @@
+{
+    "Sensors":[
+        {
+            "Name":"cpu0-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu1-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu2-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu3-bottom-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu3-top-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu4-bottom-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu4-top-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu5-bottom-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu5-top-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu6-bottom-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu6-top-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu7-bottom-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu7-middle-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"cpu7-top-thermal",
+            "Type":"CPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"gpuss0-thermal",
+            "Type":"GPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"gpuss1-thermal",
+            "Type":"GPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"gpuss2-thermal",
+            "Type":"GPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"gpuss7-thermal",
+            "Type":"GPU",
+            "Throttling":[
+                {
+                    "Type": "Hot",
+                    "Severe": 90,
+                    "Shutdown": 110
+                }
+            ]
+        },
+        {
+            "Name":"qcom-battmgr-bat",
+            "Type":"BATTERY"
+        },
+        {
+            "Name":"modem0-thermal",
+            "Type":"MODEM"
+        },
+        {
+            "Name":"modem1-thermal",
+            "Type":"MODEM"
+        },
+        {
+            "Name":"modem2-thermal",
+            "Type":"MODEM"
+        },
+        {
+            "Name":"modem3-thermal",
+            "Type":"MODEM"
+        },
+        {
+            "Name":"mem-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"camera0-thermal",
+            "Type":"SKIN"
+        },
+        {
+            "Name":"camera1-thermal",
+            "Type":"SKIN"
+        },
+        {
+            "Name":"video-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"aoss0-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"aoss1-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"aoss2-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cpuss0-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cpuss1-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cpuss2-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cpuss3-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cdsp0-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cdsp1-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cdsp2-thermal",
+            "Type":"UNKNOWN"
+        },
+        {
+            "Name":"cdsp3-thermal",
+            "Type":"UNKNOWN"
+        }
+    ],
+    "CoolingDevices":[
+        {
+            "Name":"cpufreq-cpu0",
+            "Type":"CPU"
+        },
+        {
+            "Name":"cpufreq-cpu3",
+            "Type":"CPU"
+        },
+        {
+            "Name":"cpufreq-cpu7",
+            "Type":"CPU"
+        },
+	{
+	    "Name":"devfreq-3d00000.gpu",
+	    "Type":"GPU"
+        }
+    ]
+}
