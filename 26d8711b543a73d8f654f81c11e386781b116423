@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "62e046a5_bb731713",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-03-31T03:56:50Z",
+      "side": 1,
+      "message": "I copied the db845c config from the libpm repo and modified it to match sm8550 thermal zone names, then matched the trip points from the mainline sm8550 dtsi. Since from what I understand, this is supposed to hint to the frameworks that the kernel has throttled. The thermal hal itself does not actively cause throttling.",
+      "parentUuid": "09c91776_8c8a7832",
+      "revId": "26d8711b543a73d8f654f81c11e386781b116423",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f095637_96c697ac",
