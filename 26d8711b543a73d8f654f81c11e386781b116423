@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ee5e345_5fda471e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-03-31T06:20:40Z",
+      "side": 1,
+      "message": "https://github.com/aufarakha/mi-thermal-py-crypt\n\nIt\u0027s much faster this way, and it works not only with Xiaomi.",
+      "parentUuid": "62e046a5_bb731713",
+      "revId": "26d8711b543a73d8f654f81c11e386781b116423",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f095637_96c697ac",
