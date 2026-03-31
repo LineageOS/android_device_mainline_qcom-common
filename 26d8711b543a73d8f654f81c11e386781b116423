@@ -69,6 +69,24 @@
       "message": "tabs here while it\u0027s spaces in elsewhere",
       "revId": "26d8711b543a73d8f654f81c11e386781b116423",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "44b95335_00f81a11",
+        "filename": "soc/sm8550/thermal/thermal-sm8550.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-03-31T06:53:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f095637_96c697ac",
+      "revId": "26d8711b543a73d8f654f81c11e386781b116423",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
