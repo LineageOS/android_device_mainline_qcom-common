@@ -16,6 +16,24 @@
       "message": "At very least, in practice, that\u0027ll break swiftshader support",
       "revId": "93bb8016f9ec7dcef936d4408006ef9e4aaa05b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba5c7382_3c2285f5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-04-10T21:45:09Z",
+      "side": 1,
+      "message": "Added a conditional to cover that.",
+      "parentUuid": "873f4f44_15aadb7e",
+      "revId": "93bb8016f9ec7dcef936d4408006ef9e4aaa05b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
