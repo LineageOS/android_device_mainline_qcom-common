@@ -1,0 +1,2 @@
+allow hal_wifi_default self:capability sys_module;
+allow hal_wifi_default proc_net:file r_file_perms;
