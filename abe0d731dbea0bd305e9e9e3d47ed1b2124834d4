@@ -16,6 +16,24 @@
       "message": "wrong section",
       "revId": "abe0d731dbea0bd305e9e9e3d47ed1b2124834d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc6465ce_c5f83af7",
+        "filename": "soc/sm8550/product.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-04-27T04:56:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d589b909_b1408de7",
+      "revId": "abe0d731dbea0bd305e9e9e3d47ed1b2124834d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
