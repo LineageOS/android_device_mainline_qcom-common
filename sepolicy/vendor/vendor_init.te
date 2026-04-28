@@ -1,5 +1,4 @@
 set_prop(vendor_init, vendor_qcom_soc_prop)
-set_prop(vendor_init, vendor_usb_prop)
 set_prop(vendor_init, vendor_remoteproc_prop)
 
 allow vendor_init fastrpc_device:chr_file r_file_perms;
