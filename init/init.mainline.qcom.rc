@@ -53,7 +53,7 @@ on property:vendor.remoteproc.trigger_start=*
     exec u:r:vendor_start_remoteproc:s0 -- /vendor/bin/sh /vendor/bin/init.mainline.qcom.start_remoteproc.sh ${vendor.remoteproc.trigger_start}
 
 on start_all_remoteproc
-    write /sys/module/firmware_class/parameters/path ${vendor.remoteproc.firmware_class.path:-/vendor/firmware_mnt/image/}
+    trigger firmware_mounts_complete
     exec u:r:vendor_start_remoteproc:s0 -- /vendor/bin/sh /vendor/bin/init.mainline.qcom.start_remoteproc.sh
 
 # Set SoC properties
