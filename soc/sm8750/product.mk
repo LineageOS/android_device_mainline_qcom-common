@@ -31,6 +31,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.opengles.version=196610
 endif
 
+# Graphics allocator (minigbm)
+$(call soong_config_set_string_list,minigbm_upstream,cflags,-DSC_7280)
+
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sm8750.rc
