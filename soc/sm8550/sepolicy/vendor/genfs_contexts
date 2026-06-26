@@ -21,11 +21,11 @@ genfscon sysfs /devices/platform/soc@0/a600000.usb/udc/a600000.usb	u:object_r:sy
 
 # Wakeup
 genfscon sysfs /devices/platform/gpio-keys/wakeup											u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc@0/1c00000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup						u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc@0/1c00000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/mhi0/wakeup					u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc@0/32300000.remoteproc/wakeup									u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc@0/6800000.remoteproc/wakeup									u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc@0/c400000.spmi/spmi-0/0-00/c400000.spmi:pmic@0:pon@1300/c400000.spmi:pmic@0:pon@1300:pwrkey/wakeup	u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc@0/c400000.spmi/spmi-0/0-00/c400000.spmi:pmic@0:rtc@6100/rtc/rtc0/alarmtimer.0.auto/wakeup		u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc@0/c400000.spmi/spmi-0/0-00/c400000.spmi:pmic@0:rtc@6100/wakeup					u:object_r:sysfs_wakeup:s0
 
 # Wi-Fi
