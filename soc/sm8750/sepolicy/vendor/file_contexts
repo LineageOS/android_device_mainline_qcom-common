@@ -56,7 +56,8 @@
 /dev/block/platform/soc@0/1d84000\.ufs/sd[a-h]				u:object_r:bootloader_block_device:s0
 
 # Wakeup
-/sys/devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-bat/wakeup[0-9]*(/.*)?		u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-usb/wakeup[0-9]*(/.*)?		u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/pmic-glink/pmic_glink.power-supply.0/power_supply/qcom-battmgr-wls/wakeup[0-9]*(/.*)?		u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/pmic-glink/pmic_glink.ucsi.0/power_supply/ucsi-source-psy-pmic_glink.ucsi.01/wakeup[0-9]*(/.*)?	u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink\.power-supply\.0/power_supply/qcom-battmgr-bat/wakeup[0-9]*(/.*)?				u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink\.power-supply\.0/power_supply/qcom-battmgr-usb/wakeup[0-9]*(/.*)?				u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink\.power-supply\.0/power_supply/qcom-battmgr-wls/wakeup[0-9]*(/.*)?				u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/pmic-glink/pmic_glink\.ucsi.0/power_supply/ucsi-source-psy-pmic_glink\.ucsi\.01/wakeup[0-9]*(/.*)?		u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc@0/c400000\.spmi/spmi-0/0-00/c400000\.spmi:pmic@0:rtc@6100/rtc/rtc0/alarmtimer\.[0-9]\.auto/wakeup(/.*)?	u:object_r:sysfs_wakeup:s0
