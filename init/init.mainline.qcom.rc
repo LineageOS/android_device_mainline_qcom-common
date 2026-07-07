@@ -7,9 +7,10 @@ import /vendor/etc/init/hw/init.mainline.rc
 import /vendor/etc/init/hw/init.mainline.qcom.${ro.vendor.qcom.soc.family}.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 
-# /dev/block/bootdevice symlink
+# /dev/block/bootdevice/by-name symlink
 on init
-    symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
+    mkdir /dev/block/bootdevice
+    symlink /dev/block/by-name /dev/block/bootdevice/by-name
 
 # init.mainline.qcom.sh service
 service vendor.init-mainline-qcom-sh /vendor/bin/init.mainline.qcom.sh
