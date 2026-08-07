@@ -24,6 +24,11 @@
 - Qualcomm Snapdragon 626 `msm8953pro`
 - Qualcomm Snapdragon 632 `sdm632`
 
+### msm8956
+- Qualcomm Snapdragon 650 `msm8956`
+- Qualcomm Snapdragon 652 `msm8976`
+- Qualcomm Snapdragon 653 `msm8976pro`
+
 ### msm8998
 - Qualcomm Snapdragon 835 `msm8998`
 
