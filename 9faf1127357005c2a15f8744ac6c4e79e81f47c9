@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43796b68_eb4d50ed",
+        "filename": "soc/sdm845/audio/primary_audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "why not just borrow the one from sm7150?",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e95fdd4f_182a07df",
+        "filename": "soc/sdm845/audio/primary_audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "does this work since we\u0027ve configured tinyhal to use 48000?",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "421f8a4c_0825b620",
+        "filename": "soc/sdm845/board.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "follow the same style please, no such suffixes",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c09657e6_6e9f3558",
+        "filename": "soc/sdm845/init/init.mainline.qcom.sdm845.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "add the generally possible ones, like the DSI one",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1493454c_596bab72",
+        "filename": "soc/sdm845/init/init.mainline.qcom.sdm845.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "this doesn\u0027t make sense at all, the property is used before init starts to parse rc files",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8abf049e_762e1893",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "do it in the same way as how other SoC does",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "16fa7708_9cb07382",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "same here, no suffixes",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9b79c75_f6e243dd",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "same here, no suffixes",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "42f781ee_6a43aad1",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "redundant newline here",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbcf3349_15ba9d09",
+        "filename": "soc/sdm845/properties/vendor.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-09T11:52:27Z",
+      "side": 1,
+      "message": "1. this is set in mainline/common/optional/mesa\n2. ro.hardware.egl !\u003d mesa is possible too",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
