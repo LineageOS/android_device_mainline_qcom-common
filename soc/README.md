@@ -31,6 +31,9 @@
 - Qualcomm Snapdragon 670 `sdm670`
 - Qualcomm Snapdragon 710 `sdm710`
 
+### sdm845
+- Qualcomm Snapdragon 845 `sdm845`
+
 ### sm7150
 - Qualcomm Snapdragon 730 `sm7150-aa`
 - Qualcomm Snapdragon 730G `sm7150-ab`

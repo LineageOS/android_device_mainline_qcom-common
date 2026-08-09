@@ -1,0 +1,11 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Backlight
+# TODO: Add per-board backlight paths once a reference device is set up.
+
+on early-init
+    # SDM845 UFS boot device
+    setprop ro.boot.boot_devices soc@0/1d84000.ufshc
