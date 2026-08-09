@@ -1,0 +1,9 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Backlight
+on early-boot
+    chown system system /sys/class/backlight/backlight/brightness
+    chown system system /sys/class/backlight/backlight/max_brightness
