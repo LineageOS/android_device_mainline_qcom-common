@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab9bfc47_4e411543",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Thanks for review and feedback.\nI have made the requested changes.\nPlease review",
+      "revId": "e55977814268ef59f81946ec627d28ee6c502584",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

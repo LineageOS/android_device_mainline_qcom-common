@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "888e2690_ea02610c",
+        "filename": "soc/sdm845/audio/primary_audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "43796b68_eb4d50ed",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e95fdd4f_182a07df",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-08-09T11:52:27Z",
       "side": 1,
       "message": "does this work since we\u0027ve configured tinyhal to use 48000?",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f83192cf_15b661b6",
+        "filename": "soc/sdm845/audio/primary_audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "e95fdd4f_182a07df",
       "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -52,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "10811a40_32e1ab6b",
+        "filename": "soc/sdm845/board.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "421f8a4c_0825b620",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c09657e6_6e9f3558",
@@ -65,6 +119,24 @@
       "writtenOn": "2026-08-09T11:52:27Z",
       "side": 1,
       "message": "add the generally possible ones, like the DSI one",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eda230a0_e92eef72",
+        "filename": "soc/sdm845/init/init.mainline.qcom.sdm845.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "c09657e6_6e9f3558",
       "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -86,6 +158,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9d5699f_9414fbe9",
+        "filename": "soc/sdm845/init/init.mainline.qcom.sdm845.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "1493454c_596bab72",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8abf049e_762e1893",
@@ -99,6 +189,24 @@
       "writtenOn": "2026-08-09T11:52:27Z",
       "side": 1,
       "message": "do it in the same way as how other SoC does",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76c6a58b_a5fd697b",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "8abf049e_762e1893",
       "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -120,6 +228,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a045f7b_f95519f5",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "16fa7708_9cb07382",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b9b79c75_f6e243dd",
@@ -133,6 +259,24 @@
       "writtenOn": "2026-08-09T11:52:27Z",
       "side": 1,
       "message": "same here, no suffixes",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb184fdc_11b8066e",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "b9b79c75_f6e243dd",
       "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -154,6 +298,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6680709_32c9a9c0",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "42f781ee_6a43aad1",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dbcf3349_15ba9d09",
@@ -167,6 +329,24 @@
       "writtenOn": "2026-08-09T11:52:27Z",
       "side": 1,
       "message": "1. this is set in mainline/common/optional/mesa\n2. ro.hardware.egl !\u003d mesa is possible too",
+      "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b03e6f6c_7e1f9d86",
+        "filename": "soc/sdm845/properties/vendor.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 37726
+      },
+      "writtenOn": "2026-08-11T18:42:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "dbcf3349_15ba9d09",
       "revId": "9faf1127357005c2a15f8744ac6c4e79e81f47c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
