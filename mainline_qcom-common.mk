@@ -28,6 +28,10 @@ $(call soong_config_set,tinyhal,in_rate_default,48000)
 $(call soong_config_set,tinyhal,out_period_size_default,480)
 $(call soong_config_set,tinyhal,out_rate_default,48000)
 
+ifeq ($(TARGET_GRAPHICS),mesa)
+TARGET_USES_VULKAN := true
+endif
+
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_PLATFORM ?= msm
 
