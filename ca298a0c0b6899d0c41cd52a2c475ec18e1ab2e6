@@ -16,6 +16,40 @@
       "message": "Updated",
       "revId": "ca298a0c0b6899d0c41cd52a2c475ec18e1ab2e6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0df045b_6192295b",
+        "filename": "soc/sdm845/board.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-15T17:15:38Z",
+      "side": 1,
+      "message": "wrong section",
+      "revId": "ca298a0c0b6899d0c41cd52a2c475ec18e1ab2e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a6acd15_13261970",
+        "filename": "soc/sdm845/product.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-15T17:15:38Z",
+      "side": 1,
+      "message": "hmm, sdm845 is well supported in mainline since long ago, is there more audio input/output devices supported on mainline on your sdm845 device?",
+      "revId": "ca298a0c0b6899d0c41cd52a2c475ec18e1ab2e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
