@@ -34,6 +34,24 @@
       "parentUuid": "a3116d29_b8f5589c",
       "revId": "cdb43914518126b959ead4a4edb388297ee8540b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0158ed01_9130070f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-08-15T06:14:08Z",
+      "side": 1,
+      "message": "you are right, i just looked and i was using 10.2 arm gcc from khadas for lk2nd and the 9.3 aarch64 gcc for aml mainline u-boot",
+      "parentUuid": "8feb959b_1e833fc7",
+      "revId": "cdb43914518126b959ead4a4edb388297ee8540b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
