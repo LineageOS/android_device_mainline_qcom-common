@@ -16,6 +16,24 @@
       "message": "This one works iirc\nhttps://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
       "revId": "cdb43914518126b959ead4a4edb388297ee8540b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8feb959b_1e833fc7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-15T05:48:42Z",
+      "side": 1,
+      "message": "lk2nd is always supposed to be built using 32-bit gcc, and that\u0027s 64-bit",
+      "parentUuid": "a3116d29_b8f5589c",
+      "revId": "cdb43914518126b959ead4a4edb388297ee8540b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
