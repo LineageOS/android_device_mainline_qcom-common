@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8dcca48e_a97f6db0",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-16T07:55:52Z",
+      "side": 1,
+      "message": "```\n# Graphics (Mesa)\nifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)\nifeq ($(TARGET_GRAPHICS),mesa)\nTARGET_USES_VULKAN ?\u003d true\nendif\nendif\n```",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
