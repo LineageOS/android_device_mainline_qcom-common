@@ -70,6 +70,24 @@
       "parentUuid": "ff804652_91eaa3fb",
       "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63455a11_27c24feb",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-08-17T05:38:40Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_device_mainline_qcom-common/blob/lineage-23.2/BoardConfigMainlineQcomCommon.mk#L24\nhttps://github.com/LineageOS/android_device_mainline_qcom-common/blob/lineage-23.2/optional/mesa/product.mk#L9\nThese two places enable turnip for all qcom. If certain hardware does not support turnip, then it shouldn\u0027t be enabled for those. And then the skiavk flag can follow that check.",
+      "parentUuid": "7854f414_67f5bf6c",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
