@@ -52,6 +52,24 @@
       "parentUuid": "a8ad1fd6_9c996ca9",
       "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7854f414_67f5bf6c",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-17T05:23:20Z",
+      "side": 1,
+      "message": "also, put it in appropriate section please",
+      "parentUuid": "ff804652_91eaa3fb",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
