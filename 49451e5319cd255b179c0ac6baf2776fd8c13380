@@ -34,6 +34,24 @@
       "parentUuid": "8dcca48e_a97f6db0",
       "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff804652_91eaa3fb",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-17T05:22:05Z",
+      "side": 1,
+      "message": "https://docs.mesa3d.org/drivers/freedreno.html#turnip\n\n\u003e There are no plans to port to a5xx or earlier GPUs.\n\nhttps://gitlab.freedesktop.org/mesa/mesa/-/blob/26.2/src/freedreno/vulkan/tu_device.cc?ref_type\u003dheads#L1712\n\n```\n   switch (fd_dev_gen(\u0026device-\u003edev_id)) {\n   case 6:\n   case 7:\n   case 8:\n   ...\n   default:\n      result \u003d vk_startup_errorf(instance, VK_ERROR_INITIALIZATION_FAILED,\n                                 \"device %s is unsupported\", device-\u003ename);\n      goto fail_free_name;\n   }\n```\n\nso, where did you read that it\u0027s \"used for all qcom devices\", or are you ignoring pre-Adreno 6xx...\n\nIt builds for all qcom devices just because there\u0027s no additional build dependency...\n\nalso, you\u0027d better not to make it a enforcement please?",
+      "parentUuid": "a8ad1fd6_9c996ca9",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
