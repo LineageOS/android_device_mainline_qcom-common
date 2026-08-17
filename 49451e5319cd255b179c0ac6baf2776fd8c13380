@@ -106,6 +106,24 @@
       "parentUuid": "63455a11_27c24feb",
       "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e6a8689_b9ed5a1f",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-08-17T05:49:44Z",
+      "side": 1,
+      "message": "Sure. I can probably just put it in the mesa product.mk inside the same check, though. And this can\u0027t go in anyways until after mesa 26.2 is pushed to org, since this depends on that.",
+      "parentUuid": "714019b9_8d1de03e",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
