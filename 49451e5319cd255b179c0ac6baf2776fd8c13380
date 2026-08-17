@@ -16,6 +16,24 @@
       "message": "```\n# Graphics (Mesa)\nifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)\nifeq ($(TARGET_GRAPHICS),mesa)\nTARGET_USES_VULKAN ?\u003d true\nendif\nendif\n```",
       "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8ad1fd6_9c996ca9",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-08-17T01:45:20Z",
+      "side": 1,
+      "message": "What\u0027s the reason for this? Turnip appears to be building and used for all qcom devices setting TARGET_GRAPHICS :\u003d mesa. Afaik, the multi-queue support has no minimum hardware level either. Is there a cross section where vulkan is supported but skiavk is not?",
+      "parentUuid": "8dcca48e_a97f6db0",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
