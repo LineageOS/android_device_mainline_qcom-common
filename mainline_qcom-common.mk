@@ -28,6 +28,12 @@ $(call soong_config_set,tinyhal,in_rate_default,48000)
 $(call soong_config_set,tinyhal,out_period_size_default,480)
 $(call soong_config_set,tinyhal,out_rate_default,48000)
 
+# Graphics
+ifeq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
+PRODUCT_PACKAGES += \
+    msm_drm_quirks
+endif
+
 # Graphics allocator (minigbm)
 TARGET_MINIGBM_PLATFORM ?= msm
 

@@ -8,10 +8,6 @@
 PRODUCT_PACKAGES += \
     linux_firmware_qcom-a530
 
-# Graphics
-PRODUCT_PACKAGES += \
-    msm_drm_quirks
-
 # Graphics (Mesa)
 ifeq ($(TARGET_GRAPHICS),mesa)
 PRODUCT_VENDOR_PROPERTIES += \
