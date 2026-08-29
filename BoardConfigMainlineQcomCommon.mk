@@ -21,7 +21,9 @@ MAINLINE_QCOM_KERNEL_PARAMS := \
 
 # Graphics (Mesa)
 BOARD_MESA3D_GALLIUM_DRIVERS += freedreno
+ifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
 BOARD_MESA3D_VULKAN_DRIVERS += freedreno
+endif
 
 # Platform
 TARGET_BOARD_PLATFORM := qcom

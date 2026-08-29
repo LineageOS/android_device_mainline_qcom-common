@@ -5,7 +5,9 @@
 
 ifeq ($(TARGET_GRAPHICS),mesa)
 
+ifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.vulkan=freedreno
+endif
 
 endif # TARGET_GRAPHICS
