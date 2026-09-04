@@ -36,11 +36,6 @@ ifneq ($(filter apq% msm%,$(TARGET_QCOM_SOC_FAMILY)),)
 TARGET_QCOM_SOC_FAMILY_IS_LEGACY := true
 endif
 
-# Audio HAL
-ifneq ($(TARGET_INITIAL_BRINGUP),true)
-TARGET_AUDIO_HAL ?= tinyhal
-endif
-
 # Boot HAL
 ifeq ($(AB_OTA_UPDATER),true)
 TARGET_BOOT_HAL ?= qcom-caf-aidl
