@@ -61,10 +61,6 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 endif
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(MAINLINE_QCOM_COMMON_PATH)/overlays/overlay
-
 # Properties
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.qcom.soc.family=$(TARGET_QCOM_SOC_FAMILY)
