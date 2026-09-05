@@ -23,11 +23,6 @@ ifeq ($(TARGET_AUDIO_POLICY),cuttlefish)
 SOONG_CONFIG_mainline_qcom_common_soc_primary_audio_policy_configuration_variant := none
 endif
 
-$(call soong_config_set,tinyhal,in_period_size_default,480)
-$(call soong_config_set,tinyhal,in_rate_default,48000)
-$(call soong_config_set,tinyhal,out_period_size_default,480)
-$(call soong_config_set,tinyhal,out_rate_default,48000)
-
 # Graphics
 ifeq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
 PRODUCT_PACKAGES += \
