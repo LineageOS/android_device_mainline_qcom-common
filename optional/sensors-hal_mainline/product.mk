@@ -8,6 +8,11 @@ ifeq ($(TARGET_SENSORS_HAL),mainline)
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.sensors.wait_for_sensors?=1
 
+ifeq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.sensors.composite.device_orientation.enabled?=true
+endif
+
 _is_libssc_available := $(if $(wildcard external/libssc/Android.bp external/mainline-hw-deps/libssc/Android.bp),true,false)
 $(call soong_config_set_bool,libsensors_libssc,enabled,$(_is_libssc_available))
 
