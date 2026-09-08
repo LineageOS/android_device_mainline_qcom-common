@@ -41,6 +41,9 @@
 - Qualcomm Snapdragon 730G `sm7150-ab`
 - Qualcomm Snapdragon 732G `sm7150-ac`
 
+### sm7750
+- Qualcomm Dragonwing Q8 Q-7790 `cq7790m` `cq7790s`
+
 ### sm8550
 - Qualcomm Snapdragon 8 Gen 2 `qcs8550`
 

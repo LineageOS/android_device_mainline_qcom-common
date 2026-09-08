@@ -22,6 +22,8 @@ ifeq ($(TARGET_QCOM_SOC_FAMILY),)
             TARGET_QCOM_SOC_FAMILY := sdm670
         else ifneq ($(filter sm7150%,$(TARGET_QCOM_SOC)),)
             TARGET_QCOM_SOC_FAMILY := sm7150
+        else ifneq ($(filter cq7790m cq7790s,$(TARGET_QCOM_SOC)),)
+            TARGET_QCOM_SOC_FAMILY := sm7750
         else ifneq ($(filter qcs8550,$(TARGET_QCOM_SOC)),)
             TARGET_QCOM_SOC_FAMILY := sm8550
         else ifneq ($(filter cq8725s cq8750s,$(TARGET_QCOM_SOC)),)
