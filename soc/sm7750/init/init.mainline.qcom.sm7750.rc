@@ -1,0 +1,16 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Backlight
+on early-boot
+    chown system system /sys/class/backlight/ae94000.dsi.0/brightness
+    chown system system /sys/class/backlight/ae94000.dsi.0/max_brightness
+    chown system system /sys/class/backlight/ae96000.dsi.0/brightness
+    chown system system /sys/class/backlight/ae96000.dsi.0/max_brightness
+
+# Cpuset
+on boot
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-2
