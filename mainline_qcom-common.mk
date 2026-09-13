@@ -9,6 +9,9 @@ MAINLINE_QCOM_COMMON_SOC_PATH := $(MAINLINE_QCOM_COMMON_PATH)/soc/$(TARGET_QCOM_
 # Inherit from mainline/common
 $(call inherit-product, device/mainline/common/mainline_common.mk)
 
+# Inherit from mainline/qcom-common-ext
+$(call inherit-product-if-exists, device/mainline/qcom-common-ext/mainline_qcom-common-ext.mk)
+
 # Include the fragments
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk

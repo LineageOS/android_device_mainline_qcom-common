@@ -49,3 +49,6 @@ TARGET_RECOVERY_PIXEL_FORMAT ?= RGBX_8888
 include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(MAINLINE_QCOM_COMMON_PATH)/sepolicy/vendor
+
+# Inherit from mainline/qcom-common-ext
+-include device/mainline/qcom-common-ext/BoardConfigMainlineQcomCommonExt.mk
