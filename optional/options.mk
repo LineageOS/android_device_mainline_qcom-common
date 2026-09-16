@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ifneq ($(MAINLINE_QCOM_COMMON_OPTIONS_MK_INCLUDED),true)
+MAINLINE_QCOM_COMMON_OPTIONS_MK_INCLUDED := true
+
 ##### Availability information #####
 
 ifeq ($(MAINLINE_QCOM_COMMON_PREFER_EXT_MODULES),true)
@@ -66,3 +69,5 @@ TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm-upstream
 include device/mainline/common/optional/options.mk
 
 ##### Do not add statements below the inherit in above unless necessary #####
+
+endif # !MAINLINE_QCOM_COMMON_OPTIONS_MK_INCLUDED

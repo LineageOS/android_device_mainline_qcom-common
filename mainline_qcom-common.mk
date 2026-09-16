@@ -13,6 +13,7 @@ $(call inherit-product, device/mainline/common/mainline_common.mk)
 $(call inherit-product-if-exists, device/mainline/qcom-common-ext/mainline_qcom-common-ext.mk)
 
 # Include the fragments
+include $(MAINLINE_QCOM_COMMON_PATH)/optional/options.mk
 include $(MAINLINE_QCOM_COMMON_PATH)/optional/*/product.mk
 include $(MAINLINE_QCOM_COMMON_SOC_PATH)/product.mk
 
