@@ -60,8 +60,10 @@ PRODUCT_PACKAGES += \
 endif
 
 # Properties
+ifneq ($(TARGET_QCOM_SOC_FAMILY),unified)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.qcom.soc.family=$(TARGET_QCOM_SOC_FAMILY)
+endif
 
 ifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
 ifeq ($(TARGET_GRAPHICS),mesa)
