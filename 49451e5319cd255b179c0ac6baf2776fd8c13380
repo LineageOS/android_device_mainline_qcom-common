@@ -124,6 +124,24 @@
       "parentUuid": "714019b9_8d1de03e",
       "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "17a48c4a_86f59e55",
+        "filename": "mainline_qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-09-22T17:05:06Z",
+      "side": 1,
+      "message": "With mesa 26.2 pushed for lineage 24, is there any reason to -2 this now? It\u0027s inside the same check that enables vulkan in general, so it should be safe.",
+      "parentUuid": "7e6a8689_b9ed5a1f",
+      "revId": "49451e5319cd255b179c0ac6baf2776fd8c13380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
