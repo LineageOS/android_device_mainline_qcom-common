@@ -1,0 +1,1 @@
+allow hal_sensors_default self:qipcrtr_socket { bind create getattr getopt read setopt write };
