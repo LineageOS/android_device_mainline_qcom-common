@@ -49,6 +49,15 @@ on post-fs
     mkdir /mnt/vendor/persist-overlayfs-workdir
     mount overlay overlay /mnt/vendor/persist rw lowerdir=/mnt/vendor/persist,upperdir=/mnt/vendor/persist-overlayfs-upperdir,workdir=/mnt/vendor/persist-overlayfs-workdir
 
+# QSEECOM
+service vendor.qseecomd /vendor/bin/qseecomd
+    class core
+    user root
+    group root
+
+on post-fs
+    start vendor.qseecomd
+
 # Remoteproc
 on property:vendor.remoteproc.trigger_start=*
     exec u:r:vendor_start_remoteproc:s0 -- /vendor/bin/sh /vendor/bin/init.mainline.qcom.start_remoteproc.sh ${vendor.remoteproc.trigger_start}

@@ -5,3 +5,6 @@
 
 # FastRPC
 /dev/fastrpc-*	0600	system	system
+
+# QSEECOM
+/dev/qseecom	0660	system	drmrpc
