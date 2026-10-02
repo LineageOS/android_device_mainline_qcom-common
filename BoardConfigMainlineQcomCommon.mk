@@ -50,5 +50,9 @@ include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(MAINLINE_QCOM_COMMON_PATH)/sepolicy/vendor
 
+ifeq ($(TARGET_QCOM_SOC_FAMILY_DOWNSTREAM_IS_PRE_GKI),true)
+-include device/lineage/sepolicy/libion/sepolicy.mk
+endif
+
 # Inherit from mainline/qcom-common-ext
 -include device/mainline/qcom-common-ext/BoardConfigMainlineQcomCommonExt.mk
