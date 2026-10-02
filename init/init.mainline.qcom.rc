@@ -7,11 +7,6 @@ import /vendor/etc/init/hw/init.mainline.rc
 import /vendor/etc/init/hw/init.mainline.qcom.${ro.vendor.qcom.soc.family}.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 
-# /dev/block/bootdevice/by-name symlink
-on init
-    mkdir /dev/block/bootdevice
-    symlink /dev/block/by-name /dev/block/bootdevice/by-name
-
 # init.mainline.qcom.sh service
 service vendor.init-mainline-qcom-sh /vendor/bin/init.mainline.qcom.sh
     user root
@@ -21,6 +16,12 @@ service vendor.init-mainline-qcom-sh /vendor/bin/init.mainline.qcom.sh
 
 on init
     start vendor.init-mainline-qcom-sh
+
+# Block device symlinks
+on init
+    mkdir /dev/block/bootdevice
+    symlink /dev/block/by-name /dev/block/bootdevice/by-name
+    symlink /dev/mmcblk0rpmb /dev/block/mmcblk0rpmb
 
 # Modem
 on boot && property:ro.vendor.qcom.soc.enable_modem_services=1
