@@ -3,5 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# DMA heap
+/dev/dma_heap/qseecom	0444	system	system
+
 # FastRPC
 /dev/fastrpc-*	0600	system	system
