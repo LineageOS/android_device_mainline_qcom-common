@@ -10,7 +10,6 @@
 # Devices
 /dev/fastrpc-adsp			u:object_r:fastrpc_device:s0
 /dev/fastrpc-sdsp			u:object_r:fastrpc_device:s0
-/dev/ion				u:object_r:ion_device:s0
 /dev/qcom_rmtfs_mem[0-9]+		u:object_r:rmtfs_device:s0
 /dev/qseecom				u:object_r:tee_device:s0
 
