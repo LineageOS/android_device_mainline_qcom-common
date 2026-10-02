@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
     init.mainline.qcom.sh \
     init.mainline.qcom.start_remoteproc.sh
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,$(TARGET_QCOM_SOC_FAMILY_DOWNSTREAM_IS_PRE_GKI))
+
 # Media
 PRODUCT_PACKAGES += \
     media_profiles.xml

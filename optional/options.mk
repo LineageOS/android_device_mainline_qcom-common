@@ -47,7 +47,12 @@ ifeq ($(TARGET_QCOM_SOC_FAMILY),)
 endif
 
 ifneq ($(filter apq% msm%,$(TARGET_QCOM_SOC_FAMILY)),)
+TARGET_QCOM_SOC_FAMILY_DOWNSTREAM_IS_PRE_GKI := true
 TARGET_QCOM_SOC_FAMILY_IS_LEGACY := true
+endif
+
+ifneq ($(filter sdm% sm61% sm62% sm71% sm72% sm81% sm82%,$(TARGET_QCOM_SOC_FAMILY)),)
+TARGET_QCOM_SOC_FAMILY_DOWNSTREAM_IS_PRE_GKI := true
 endif
 
 ##### Components #####
