@@ -25,6 +25,10 @@ ifneq ($(TARGET_QCOM_SOC_FAMILY_IS_LEGACY),true)
 BOARD_MESA3D_VULKAN_DRIVERS += freedreno
 endif
 
+# Partitions
+BOARD_ROOT_EXTRA_SYMLINKS += \
+    /vendor/firmware_mnt:/firmware
+
 # Platform
 TARGET_BOARD_PLATFORM := qcom
 

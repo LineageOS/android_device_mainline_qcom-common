@@ -29,6 +29,7 @@
 /(vendor|system/vendor)/bin/tqftpserv						u:object_r:tqftpserv_exec:s0
 
 # Mountpoint
+/firmware						u:object_r:firmware_mnt_file:s0
 /(vendor|system/vendor)/firmware_mnt(/.*)?		u:object_r:firmware_mnt_file:s0
 
 # Persist
