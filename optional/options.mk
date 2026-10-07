@@ -6,16 +6,6 @@
 ifneq ($(MAINLINE_QCOM_COMMON_OPTIONS_MK_INCLUDED),true)
 MAINLINE_QCOM_COMMON_OPTIONS_MK_INCLUDED := true
 
-##### Availability information #####
-
-ifeq ($(MAINLINE_QCOM_COMMON_PREFER_EXT_MODULES),true)
-ifeq ($(wildcard device/mainline/qcom-common-ext/optional/options.mk),)
-$(warning Target device prefers using modules from mainline/qcom-common-ext repository, however it is not available. Features may not work as intended.)
-else
-MAINLINE_QCOM_COMMON_USE_EXT_MODULES := true
-endif
-endif
-
 ##### SoC #####
 
 ifeq ($(TARGET_QCOM_SOC_FAMILY),)
@@ -50,8 +40,6 @@ ifneq ($(filter apq% msm%,$(TARGET_QCOM_SOC_FAMILY)),)
 TARGET_QCOM_SOC_FAMILY_IS_LEGACY := true
 endif
 
-##### Components #####
-
 # Boot HAL
 ifeq ($(AB_OTA_UPDATER),true)
 TARGET_BOOT_HAL ?= qcom-caf-aidl
@@ -59,11 +47,6 @@ endif
 
 # Graphics HALs
 TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm-upstream
-
-##### Inherits #####
-
-# Inherit from mainline/qcom-common-ext
--include device/mainline/qcom-common-ext/optional/options.mk
 
 # Inherit from mainline/common
 include device/mainline/common/optional/options.mk
