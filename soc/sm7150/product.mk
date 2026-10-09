@@ -17,12 +17,6 @@ PRODUCT_PACKAGES += \
     firmware_ath10k_WCN3990_hw1.0_firmware-5.bin \
     linux_firmware_qcom-a630
 
-# Graphics (Mesa)
-ifeq ($(TARGET_GRAPHICS),mesa)
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.opengles.version=196610
-endif
-
 # Init
 PRODUCT_PACKAGES += \
     init.mainline.qcom.sm7150.rc
