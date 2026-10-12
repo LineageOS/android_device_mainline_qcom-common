@@ -70,6 +70,30 @@
       },
       "revId": "4dd10016d6a335dbc5fb737a04f187d6a66f8f38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8321b80_4de76beb",
+        "filename": "optional/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-10-12T10:37:47Z",
+      "side": 1,
+      "message": "is it even a hal at all...",
+      "parentUuid": "f8ed6efc_83e5a411",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 37
+      },
+      "revId": "4dd10016d6a335dbc5fb737a04f187d6a66f8f38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
