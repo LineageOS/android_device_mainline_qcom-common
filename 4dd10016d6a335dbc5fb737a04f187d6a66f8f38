@@ -94,6 +94,30 @@
       },
       "revId": "4dd10016d6a335dbc5fb737a04f187d6a66f8f38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c0fdb8a_cee16f3c",
+        "filename": "optional/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-12T11:10:49Z",
+      "side": 1,
+      "message": "No, I just went with the flow. Feel free to re-write.",
+      "parentUuid": "b8321b80_4de76beb",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 37
+      },
+      "revId": "4dd10016d6a335dbc5fb737a04f187d6a66f8f38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
