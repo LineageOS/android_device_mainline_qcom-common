@@ -48,6 +48,9 @@ endif
 # Graphics HALs
 TARGET_GRAPHICS_ALLOCATOR_HAL ?= minigbm-upstream
 
+# Time
+TARGET_USES_TIMEKEEP ?= true
+
 # Inherit from mainline/common
 include device/mainline/common/optional/options.mk
 
