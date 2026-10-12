@@ -46,6 +46,5 @@ endif
 TARGET_RECOVERY_PIXEL_FORMAT ?= RGBX_8888
 
 # SELinux
-include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(MAINLINE_QCOM_COMMON_PATH)/sepolicy/vendor

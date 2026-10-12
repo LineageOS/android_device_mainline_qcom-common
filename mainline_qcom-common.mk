@@ -82,10 +82,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(MAINLINE_QCOM_COMMON_PATH) \
     hardware/mainline/qcom
 
-# Time
-PRODUCT_PACKAGES += \
-    TimeKeep
-
 # Utilities
 PRODUCT_PACKAGES += \
     pil-squasher
