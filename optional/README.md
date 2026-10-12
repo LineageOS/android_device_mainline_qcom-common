@@ -5,6 +5,13 @@
 |-------|-----------|-------------|
 | qcom-caf-aidl | boot-hal_qcom-caf-aidl | Downstream boot control HAL from hardware/qcom-caf/bootctrl |
 
+## Time
+
+### TARGET_USES_TIMEKEEP
+| Value | Directory | Description |
+|-------|-----------|-------------|
+| true | timekeep | Sony Timekeep hal for devices that can't update rtc via the kernel |
+
 ## USB
 
 ### TARGET_USB_HAL
