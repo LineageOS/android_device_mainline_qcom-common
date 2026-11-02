@@ -16,6 +16,24 @@
       "message": "I wonder why I haven\u0027t seen these on vts runs. But looks correct in general. However, I\u0027d probably put these in file_contexts where regex can be used to collapse these to 2 lines.",
       "revId": "3089432a3e87979e0c70a62646b28ea0107e32cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88bb2bd0_55ca4de0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-11-02T18:18:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8dac30d_a8a3c1ed",
+      "revId": "3089432a3e87979e0c70a62646b28ea0107e32cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
