@@ -17,3 +17,5 @@ allowxperm vendor_hexagonrpcd fastrpc_device:chr_file ioctl {
 };
 
 r_dir_file(vendor_hexagonrpcd, adsprpcd_file)
+r_dir_file(vendor_hexagonrpcd, mnt_vendor_file)
+r_dir_file(vendor_hexagonrpcd, vendor_persist_sensors_file)
