@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a6734b8e_7101f578",
+        "filename": "soc/sm8550/sepolicy/vendor/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-11-18T15:54:46Z",
+      "side": 1,
+      "message": "use tabs instead of spaces",
+      "revId": "b927a18889367318cd0e47bbe048c1eeeaf4c6c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
