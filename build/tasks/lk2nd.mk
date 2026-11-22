@@ -19,7 +19,9 @@ LK2ND_MAKE_FLAGS := \
     TOOLCHAIN_PREFIX=/usr/bin/arm-none-eabi- \
     $(TARGET_LK2ND_MAKE_FLAGS)
 
-$(INSTALLED_LK2NDIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/dtc
+LK2ND_SOURCE_FILES := $(shell find $(LK2ND_SOURCE) -name .git -prune -o -type f -print)
+
+$(INSTALLED_LK2NDIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/dtc $(LK2ND_SOURCE_FILES)
 	$(call pretty,"Target lk2nd image: $@")
 	mkdir -p $(LK2ND_OUT_DIR)
 	$(LK2ND_PATH_OVERRIDE) $(LK2ND_MAKE_CMD) $(strip $(LK2ND_MAKE_FLAGS)) lk2nd-$(TARGET_LK2ND_PLATFORM)
