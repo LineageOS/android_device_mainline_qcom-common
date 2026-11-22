@@ -19,7 +19,11 @@ LK2ND_MAKE_FLAGS := \
     TOOLCHAIN_PREFIX=/usr/bin/arm-none-eabi- \
     $(TARGET_LK2ND_MAKE_FLAGS)
 
-$(INSTALLED_LK2NDIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/dtc
+LK2ND_SOURCE_FILES := $(shell find $(LK2ND_SOURCE) -name .git -prune -o -type f -print)
+# lk2nd reports a version from git, which changes on every commit
+LK2ND_GIT_HEAD_LOG := $(wildcard $(LK2ND_SOURCE)/.git/logs/HEAD)
+
+$(INSTALLED_LK2NDIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/dtc $(LK2ND_SOURCE_FILES) $(LK2ND_GIT_HEAD_LOG)
 	$(call pretty,"Target lk2nd image: $@")
 	mkdir -p $(LK2ND_OUT_DIR)
 	$(LK2ND_PATH_OVERRIDE) $(LK2ND_MAKE_CMD) $(strip $(LK2ND_MAKE_FLAGS)) lk2nd-$(TARGET_LK2ND_PLATFORM)
