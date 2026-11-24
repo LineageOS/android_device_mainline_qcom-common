@@ -26,6 +26,9 @@
 /(vendor|system/vendor)/bin/rmtfs						u:object_r:rmtfs_exec:s0
 /(vendor|system/vendor)/bin/tqftpserv						u:object_r:tqftpserv_exec:s0
 
+# LEDs
+/sys/devices/platform/soc(@0)?/[^/]+\.spmi(/[^/]+\.spmi)?/spmi-[0-9]+/[^/]+/[^/]+/leds/[^/]*:(flash|torch)[^/]*(/.*)?	u:object_r:vendor_sysfs_camera_flash:s0
+
 # Mountpoint
 /(vendor|system/vendor)/firmware_mnt(/.*)?		u:object_r:firmware_mnt_file:s0
 
