@@ -118,6 +118,30 @@
       },
       "revId": "4dd10016d6a335dbc5fb737a04f187d6a66f8f38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ef194cd_0b254941",
+        "filename": "optional/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-11-24T04:47:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c0fdb8a_cee16f3c",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 37
+      },
+      "revId": "4dd10016d6a335dbc5fb737a04f187d6a66f8f38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
